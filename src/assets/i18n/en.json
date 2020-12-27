@@ -1,0 +1,10 @@
+{
+  "HOME": {
+    "PAGE_TITLE": "Home",
+    "META_DESCRIPTION": "Homepage"
+  },
+  "ABOUT": {
+    "PAGE_TITLE": "About",
+    "META_DESCRIPTION": "About us page"
+  }
+}
