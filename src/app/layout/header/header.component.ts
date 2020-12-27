@@ -1,16 +1,28 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  Output,
+  EventEmitter,
+  Input,
+} from '@angular/core';
+import { Language } from 'src/app/core/models/language.model';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  @Output() readonly toggleLanguage: EventEmitter<Language>;
+  @Input() availableLanguages: Language[] = [];
+  @Input() currentLanguage = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.toggleLanguage = new EventEmitter();
   }
 
+  onToggleLanguage(language: Language): void {
+    this.toggleLanguage.emit(language);
+  }
 }

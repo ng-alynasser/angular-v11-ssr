@@ -1,8 +1,8 @@
-<app-header></app-header>
-<ng-container *ngFor="let language of availableLanguages">
-  <button (click)="toggleLanguage(language)">
-    {{ language.name }}
-  </button>
-</ng-container>
+<app-header
+  [currentLanguage]="currentLanguage"
+  [availableLanguages]="availableLanguages"
+  (toggleLanguage)="toggleLanguage($event)"
+></app-header>
+
 <router-outlet></router-outlet>
 <app-footer></app-footer>

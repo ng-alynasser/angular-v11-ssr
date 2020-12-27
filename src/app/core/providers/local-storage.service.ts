@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 export type LocalStorageKey = 'uiLanguageCode';
 const PREFIX = 'SAGECO_';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class LocalStorageService {
   public set(key: LocalStorageKey, value: any): void {
     const keyName = this.keyName(key);
