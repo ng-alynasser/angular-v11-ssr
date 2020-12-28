@@ -1,0 +1,50 @@
+:root {
+  --main-font: "Barlow", sans-serif;
+  --heading-font: "Amatic SC", cursive;
+  --base-color: #eddd5e;
+  --base-color-rgb: 237, 221, 94;
+  --primary-color: #5b8c51;
+  --primary-color-rgb: 91, 140, 81;
+  --black: #404a3d;
+  --black-rgb: 64, 74, 61;
+  --dark-gray: #878986;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

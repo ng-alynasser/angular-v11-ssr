@@ -1,4 +1,4 @@
-import { NgModule, PLATFORM_ID } from '@angular/core';
+import { Injector, NgModule, PLATFORM_ID } from '@angular/core';
 import {
   BrowserModule,
   BrowserTransferStateModule,
@@ -16,15 +16,16 @@ import { configFactory } from './factories/config.factory';
 import { documentFactory } from './factories/document.factory';
 import { metaFactory } from './factories/meta.factory';
 import { windowFactory } from './factories/window.factory';
-import { LocalStorageService } from './providers/local-storage.service';
 import { DOCUMENT, WINDOW } from './constants';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { translateBrowserLoaderFactory } from './translate-loaders/translate-browser.loader';
-import { I18NService } from './providers/i18n.service';
 import { SharedModule } from '../shared/shared.module';
 import { HeaderComponent } from '../layout/header/header.component';
 import { MainComponent } from '../layout/main.component';
 import { FooterComponent } from '../layout/footer/footer.component';
+import { SplashScreenService } from './providers/splash-screen.service';
+import { FaConfig, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { buildIconLibrary } from './icons-library';
 
 @NgModule({
   declarations: [MainComponent, HeaderComponent, FooterComponent],
@@ -62,8 +63,16 @@ import { FooterComponent } from '../layout/footer/footer.component';
       useFactory: windowFactory,
       deps: [PLATFORM_ID],
     },
-    LocalStorageService,
-    I18NService,
   ],
 })
-export class CoreModule {}
+export class CoreModule {
+  constructor(
+    private readonly injector: Injector,
+    private readonly library: FaIconLibrary,
+    private faConfig: FaConfig
+  ) {
+    this.injector.get<SplashScreenService>(SplashScreenService);
+    buildIconLibrary(this.library);
+    this.faConfig.defaultPrefix = 'fab';
+  }
+}

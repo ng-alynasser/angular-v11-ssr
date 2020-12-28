@@ -1,0 +1,76 @@
+.header {
+  &__wrapper {
+    padding: 1.8em;
+    background-color: #f5f6f5;
+  }
+
+  &__nav {
+    li {
+      cursor: pointer;
+
+      a {
+        position: relative;
+        border-radius: 5px;
+        line-height: 40px;
+        padding: 10px 20px;
+        font-weight: 500;
+        text-transform: capitalize;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        z-index: 1;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border-radius: 7px;
+          background: var(--base-color);
+          content: "";
+          transform: scaleX(0.5);
+          opacity: 0;
+          transition: all 500ms ease;
+          z-index: -1;
+        }
+      }
+
+      &:hover > a {
+        color: var(--black);
+      }
+
+      &:hover > a:before {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+    .active {
+      & > a:before {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+      & > a {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__social {
+    li {
+      cursor: pointer;
+
+      fa-icon {
+        padding: 12px;
+        border-radius: 50%;
+        background: rgba(gray, 0.1);
+        transition: all 1s ease;
+
+        &:hover {
+          background: var(--primary-color);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

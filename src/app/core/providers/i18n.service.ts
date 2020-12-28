@@ -5,7 +5,9 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { Language } from '../models/language.model';
 import { LocalStorageService } from './local-storage.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class I18NService {
   constructor(
     private readonly translate: TranslateService,
@@ -38,7 +40,7 @@ export class I18NService {
     if (this.localStorageService.get('uiLanguageCode')) {
       this.translate.use(this.localStorageService.get('uiLanguageCode'));
     } else {
-      this.translate.use(this.translate.getBrowserCultureLang());
+      this.translate.use('en');
     }
   }
 

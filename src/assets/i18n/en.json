@@ -1,4 +1,14 @@
 {
+  "HEADER": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "PROJECTS": "Projects",
+    "NEWS": "News",
+    "GALLERY": "Gallery",
+    "CHOOSE_US": "Why choose us",
+    "ABOUT": "About",
+    "CONTACT": "Contact"
+  },
   "HOME": {
     "PAGE_TITLE": "Home",
     "META_DESCRIPTION": "Homepage"

@@ -1,5 +1,58 @@
-<ng-container *ngFor="let language of availableLanguages">
-  <button (click)="onToggleLanguage(language)">
-    {{ language.name }}
-  </button>
-</ng-container>
+<header class="header__wrapper" fxLayout fxLayoutAlign="space-between center">
+  <a
+    routerLink="/home"
+    class="header__logo"
+    fxLayout
+    fxLayoutAlign="center center"
+    fxFlex="10"
+  >
+    <img src="assets/images/resources/logo.png" alt="" />
+  </a>
+  <ul class="header__nav" fxLayout fxLayoutAlign="space-around center">
+    <li routerLink="/home" routerLinkActive="active">
+      <a> {{ "HEADER.HOME" | translate }}</a>
+    </li>
+    <li routerLink="/services" routerLinkActive="active">
+      <a>{{ "HEADER.SERVICES" | translate }}</a>
+    </li>
+    <li routerLink="/projects" routerLinkActive="active">
+      <a>{{ "HEADER.PROJECTS" | translate }}</a>
+    </li>
+    <li routerLink="/news" routerLinkActive="active">
+      <a>{{ "HEADER.NEWS" | translate }}</a>
+    </li>
+    <li routerLink="/gallery" routerLinkActive="active">
+      <a>{{ "HEADER.GALLERY" | translate }}</a>
+    </li>
+    <li routerLink="/choose-us" routerLinkActive="active">
+      <a>{{ "HEADER.CHOOSE_US" | translate }}</a>
+    </li>
+    <li routerLink="/about" routerLinkActive="active">
+      <a>{{ "HEADER.ABOUT" | translate }}</a>
+    </li>
+    <li routerLink="/contact" routerLinkActive="active">
+      <a>{{ "HEADER.CONTACT" | translate }}</a>
+    </li>
+  </ul>
+
+  <ul
+    class="header__social"
+    fxFlex="15"
+    fxLayout
+    fxLayoutAlign="space-around center"
+    fxHide.lt-md
+  >
+    <li>
+      <fa-icon icon="facebook-square"></fa-icon>
+    </li>
+    <li>
+      <fa-icon icon="twitter"></fa-icon>
+    </li>
+    <li>
+      <fa-icon icon="instagram"></fa-icon>
+    </li>
+    <li>
+      <fa-icon icon="dribbble"></fa-icon>
+    </li>
+  </ul>
+</header>

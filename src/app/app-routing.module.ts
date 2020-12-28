@@ -6,10 +6,15 @@ import { MainComponent } from './layout/main.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: MainComponent,
     children: [
       {
-        path: '',
+        path: 'home',
         loadChildren: () =>
           import('./pages/home/home.module').then((m) => m.HomeModule),
       },
@@ -30,6 +35,25 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/about/about.module').then((m) => m.AboutModule),
       },
+      {
+        path: 'choose-us',
+        loadChildren: () =>
+          import('./pages/choose-us/choose-us.module').then(
+            (m) => m.ChooseUsModule
+          ),
+      },
+      {
+        path: 'gallery',
+        loadChildren: () =>
+          import('./pages/gallery/gallery.module').then((m) => m.GalleryModule),
+      },
+      {
+        path: 'projects',
+        loadChildren: () =>
+          import('./pages/projects/projects.module').then(
+            (m) => m.ProjectsModule
+          ),
+      },
     ],
     canActivateChild: [MetaGuard],
     data: {
@@ -40,7 +64,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
 ];

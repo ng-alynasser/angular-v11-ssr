@@ -2,6 +2,7 @@ import { BidiModule } from '@angular/cdk/bidi';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule, LAYOUT_CONFIG } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 
 export const APP_LAYOUT_CONFIG = {
@@ -14,7 +15,13 @@ export const APP_LAYOUT_CONFIG = {
 };
 
 @NgModule({
-  exports: [TranslateModule, FlexLayoutModule, BidiModule, RouterModule],
+  exports: [
+    TranslateModule,
+    FlexLayoutModule,
+    BidiModule,
+    RouterModule,
+    FontAwesomeModule,
+  ],
   providers: [
     {
       provide: LAYOUT_CONFIG,

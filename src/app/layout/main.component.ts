@@ -48,11 +48,13 @@ export class MainComponent implements OnInit {
         filter((route) => route.outlet === 'primary'),
         switchMap((route) => route.data),
         tap(({ meta }) => {
-          this.title.setTitle(this.translate.instant(meta.title));
-          this.meta.updateTag({
-            name: 'description',
-            content: this.translate.instant(meta.description),
-          });
+          if (meta) {
+            this.title.setTitle(this.translate.instant(meta.title));
+            this.meta.updateTag({
+              name: 'description',
+              content: this.translate.instant(meta.description),
+            });
+          }
         })
       )
       .subscribe();

@@ -1,4 +1,14 @@
 {
+  "HEADER": {
+    "HOME": "الرئيسية",
+    "SERVICES": "الخدمات",
+    "PROJECTS": "المشاريع",
+    "NEWS": "الأخبار",
+    "GALLERY": "المعرض",
+    "CHOOSE_US": "لماذا تختارنا",
+    "ABOUT": "من نحن",
+    "CONTACT": "تواصل معنا"
+  },
   "HOME": {
     "PAGE_TITLE": "الرئيسية",
     "META_DESCRIPTION": "الصفحة الرئيسية"
