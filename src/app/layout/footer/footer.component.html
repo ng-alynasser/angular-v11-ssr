@@ -1,0 +1,85 @@
+<footer class="footer">
+  <div class="footer__image">
+    <img src="assets/images/resources/site-footer-farm.png" alt="Farm Image" />
+  </div>
+
+  <div
+    class="container"
+    fxLayout="row wrap"
+    fxLayoutAlign="space-between start"
+  >
+    <div class="footer__about-widget" fxFlex="25">
+      <h3 class="footer__title">About</h3>
+      <p class="footer__about-text">
+        Lorem ipsum dolor sit amet, adipiscing elit. Nulla placerat posuere dui.
+        Pellentesque venenatis sem non lacus ac auctor.
+      </p>
+      <div class="footer__input-box">
+        <input type="email" placeholder="Email address" />
+        <button type="submit" fxLayout fxLayoutAlign="center center">
+          <fa-icon icon="check"></fa-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer__explore" fxFlex="10">
+      <h3 class="footer__title">Explore</h3>
+      <ul>
+        <li><a routerLink="/about">About us</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/projects">Our project</a></li>
+        <li><a routerLink="/news">Lastest News</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__news" fxFlex="30">
+      <h3 class="footer__title">News</h3>
+      <ul>
+        <li fxLayout fxLayoutAlign="space-between center">
+          <div class="footer__news-image">
+            <img src="assets/images/resources/footer-1-img-1.jpg" alt="" />
+          </div>
+          <div>
+            <p class="footer__news-text">Learn 10 Best Tips for New Formers</p>
+            <p class="footer__news-date">30 Oct, 2019</p>
+          </div>
+        </li>
+        <li fxLayout fxLayoutAlign="space-between center">
+          <div class="footer__news-image">
+            <img src="assets/images/resources/footer-1-img-2.jpg" alt="" />
+          </div>
+          <div>
+            <p class="footer__news-text">Learn 10 Best Tips for New Formers</p>
+            <p class="footer__news-date">30 Oct, 2019</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__contact" fxFlex="20">
+      <h3 class="footer__title">Contact</h3>
+      <p>66 Broklyn Street, New Town DC 5752, New Yrok</p>
+      <a href=""> needhelp@agrikol.com </a>
+      <a href="">666 888 0000</a>
+
+      <div fxLayout fxLayoutAlign="space-around center" class="footer__social">
+        <a>
+          <fa-icon [icon]="['fab', 'facebook-square']"></fa-icon>
+        </a>
+        <a href="">
+          <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+        </a>
+        <a href="">
+          <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+        </a>
+        <a href="">
+          <fa-icon [icon]="['fab', 'dribbble']"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer__bottom">
+  <p class="footer__bottom-copyright">&copy; All copyright 2020, SAGECO CO.</p>
+</div>

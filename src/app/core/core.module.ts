@@ -24,7 +24,7 @@ import { HeaderComponent } from '../layout/header/header.component';
 import { MainComponent } from '../layout/main.component';
 import { FooterComponent } from '../layout/footer/footer.component';
 import { SplashScreenService } from './providers/splash-screen.service';
-import { FaConfig, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { buildIconLibrary } from './icons-library';
 
 @NgModule({
@@ -68,11 +68,9 @@ import { buildIconLibrary } from './icons-library';
 export class CoreModule {
   constructor(
     private readonly injector: Injector,
-    private readonly library: FaIconLibrary,
-    private faConfig: FaConfig
+    private readonly library: FaIconLibrary
   ) {
     this.injector.get<SplashScreenService>(SplashScreenService);
     buildIconLibrary(this.library);
-    this.faConfig.defaultPrefix = 'fab';
   }
 }

@@ -5,7 +5,14 @@ import {
   faTwitter,
   faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export function buildIconLibrary(library: FaIconLibrary): void {
-  library.addIcons(faTwitter, faFacebookSquare, faInstagram, faDribbble);
+  library.addIcons(
+    faTwitter,
+    faFacebookSquare,
+    faInstagram,
+    faDribbble,
+    faCheck
+  );
 }

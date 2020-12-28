@@ -1,0 +1,89 @@
+<section class="banner">
+  <div class="banner__circle-1">
+    <img src="assets/images/home-slider/round_1.png" alt="" />
+  </div>
+  <div class="banner__certification">
+    <img src="assets/images/home-slider/certified_logo.png" alt="" />
+  </div>
+
+  <owl-carousel-o [options]="customOptions" #owlCar>
+    <ng-template carouselSlide>
+      <div fxLayout fxLayoutAlign="center">
+        <div fxFlex="50" class="banner__content">
+          <div
+            class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+          >
+            organic & <br />
+            agriculture <br />
+            forming
+          </div>
+          <div
+            class="banner__leafs animate__animated animate__fadeInUp animate__delay-2s animate__slow"
+          >
+            <img src="assets/images/home-slider/slider-5-leafs.png" alt="" />
+          </div>
+          <p
+            class="banner__text animate__animated animate__fadeInUp animate__delay-2s animate__slow"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            iusto porro enim! Animi ut sequi illo, quasi vero voluptate beatae.
+            Labore nihil veniam officia ipsum mollitia sed vel cupiditate id.
+          </p>
+          <div
+            class="banner__discover-btn animate__animated animate__fadeInUp animate__delay-3s aniamte__slow"
+          >
+            <a>Discover more</a>
+          </div>
+        </div>
+        <div
+          class="banner__bg animate__animated animate__fadeIn animate__slower"
+          fxLayout
+          fxLayoutAlign="center center"
+        >
+          <img src="assets/images/home-slider/banner-bg.jpg" alt="" />
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div fxLayout fxLayoutAlign="center">
+        <div fxFlex="50" class="banner__content">
+          <div
+            class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+          >
+            organic & <br />
+            agriculture <br />
+            forming
+          </div>
+          <div
+            class="banner__leafs animate__animated animate__fadeInUp animate__delay-2s animate__slow"
+          >
+            <img src="assets/images/home-slider/slider-5-leafs.png" alt="" />
+          </div>
+          <p
+            class="banner__text animate__animated animate__fadeInUp animate__delay-2s animate__slow"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            iusto porro enim! Animi ut sequi illo, quasi vero voluptate beatae.
+            Labore nihil veniam officia ipsum mollitia sed vel cupiditate id.
+          </p>
+          <div
+            class="banner__discover-btn animate__animated animate__fadeInUp animate__delay-3s aniamte__slow"
+          >
+            <a>Discover more</a>
+          </div>
+        </div>
+        <div
+          class="banner__bg animate__animated animate__fadeIn animate__slower"
+          fxLayout
+          fxLayoutAlign="center center"
+        >
+          <img src="assets/images/home-slider/banner-bg.jpg" alt="" />
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+  <div class="banner__buttons">
+    <button class="btn-prev" (click)="owlCar.prev()">Prev</button>
+    <button class="btn-next" (click)="owlCar.next()">Next</button>
+  </div>
+</section>
