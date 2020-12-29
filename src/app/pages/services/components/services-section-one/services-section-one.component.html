@@ -1,0 +1,39 @@
+<section class="services">
+  <div class="container">
+    <div class="services__block-title">
+      <p>What we offer</p>
+      <h3>financial advisory</h3>
+      <div class="leaf">
+        <img src="assets/images/resources/leaf.png" alt="" />
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly">
+      <ng-container *ngFor="let service of services; let i = index">
+        <div
+          class="services__card wow fadeInLeft"
+          [attr.data-wow-delay]="(i + 1) * 300 + 'ms'"
+          fxFlex="30"
+          fxLayout="column"
+          fxLayoutAlign="center center"
+        >
+          <div
+            class="services__card-image"
+            fxLayout
+            fxLayoutAlign="center center"
+          >
+            <img [src]="service?.image" alt="" />
+          </div>
+          <h3>{{ service?.title }}</h3>
+          <div
+            class="services__card-read-more"
+            fxLayout
+            fxLayoutAlign="center center"
+          >
+            <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

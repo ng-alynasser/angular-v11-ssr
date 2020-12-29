@@ -8,7 +8,12 @@ import { ServicesSectionComponent } from './components/services-section/services
 import { TrustSectionComponent } from './components/trust-section/trust-section.component';
 
 @NgModule({
-  declarations: [HomeComponent, HomeCarouselComponent, ServicesSectionComponent, TrustSectionComponent],
+  declarations: [
+    HomeComponent,
+    HomeCarouselComponent,
+    ServicesSectionComponent,
+    TrustSectionComponent,
+  ],
   imports: [SharedModule, HomeRoutingModule, CarouselModule],
 })
 export class HomeModule {}

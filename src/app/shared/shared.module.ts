@@ -1,4 +1,5 @@
 import { BidiModule } from '@angular/cdk/bidi';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule, LAYOUT_CONFIG } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
@@ -16,6 +17,7 @@ export const APP_LAYOUT_CONFIG = {
 
 @NgModule({
   exports: [
+    CommonModule,
     TranslateModule,
     FlexLayoutModule,
     BidiModule,

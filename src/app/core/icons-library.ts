@@ -9,6 +9,7 @@ import {
   faCheck,
   faSeedling,
   faProjectDiagram,
+  faArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 export function buildIconLibrary(library: FaIconLibrary): void {
@@ -19,6 +20,7 @@ export function buildIconLibrary(library: FaIconLibrary): void {
     faDribbble,
     faCheck,
     faSeedling,
-    faProjectDiagram
+    faProjectDiagram,
+    faArrowRight
   );
 }
