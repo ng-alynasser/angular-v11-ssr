@@ -47,6 +47,7 @@
     "express": "^4.15.2",
     "localstorage-polyfill": "^1.0.1",
     "ngx-owl-carousel-o": "^5.0.0",
+    "ngx-wow": "^2.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "wowjs": "^1.1.3",

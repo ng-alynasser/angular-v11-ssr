@@ -1,13 +1,13 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ConfigService } from '@ngx-config/core';
-import { MetaService } from '@ngx-meta/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Language } from '../core/models/language.model';
 import { I18NService } from '../core/providers/i18n.service';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { merge } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-main',
@@ -23,8 +23,11 @@ export class MainComponent implements OnInit {
     private readonly router: Router,
     private readonly route: ActivatedRoute,
     private readonly title: Title,
-    private readonly meta: Meta
-  ) {}
+    private readonly meta: Meta,
+    private readonly wowService: NgwWowService
+  ) {
+    this.wowService.init();
+  }
 
   ngOnInit(): void {
     this.i18NService.init(

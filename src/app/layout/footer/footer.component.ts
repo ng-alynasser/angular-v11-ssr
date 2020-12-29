@@ -1,15 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { WOW } from 'wowjs/dist/wow.min';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {
-    new WOW().init();
-  }
-}
+export class FooterComponent {}
