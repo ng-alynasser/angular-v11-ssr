@@ -24,7 +24,10 @@ import { HeaderComponent } from '../layout/header/header.component';
 import { MainComponent } from '../layout/main.component';
 import { FooterComponent } from '../layout/footer/footer.component';
 import { SplashScreenService } from './providers/splash-screen.service';
-import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import {
+  FaIconLibrary,
+  FontAwesomeModule,
+} from '@fortawesome/angular-fontawesome';
 import { buildIconLibrary } from './icons-library';
 
 @NgModule({
@@ -51,6 +54,7 @@ import { buildIconLibrary } from './icons-library';
       },
     }),
     SharedModule,
+    FontAwesomeModule,
   ],
   providers: [
     {

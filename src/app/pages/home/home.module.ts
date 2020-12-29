@@ -4,9 +4,10 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ServicesSectionComponent } from './components/services-section/services-section.component';
 
 @NgModule({
-  declarations: [HomeComponent, HomeCarouselComponent],
+  declarations: [HomeComponent, HomeCarouselComponent, ServicesSectionComponent],
   imports: [SharedModule, HomeRoutingModule, CarouselModule],
 })
 export class HomeModule {}

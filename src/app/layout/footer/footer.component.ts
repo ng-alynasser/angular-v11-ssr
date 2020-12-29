@@ -1,6 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
-
+import { WOW } from 'wowjs/dist/wow.min';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -10,5 +9,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 export class FooterComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    new WOW().init();
+  }
 }

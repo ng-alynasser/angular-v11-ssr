@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 34px;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 button:focus {
@@ -48,4 +49,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.wow {
+  visibility: hidden;
 }
