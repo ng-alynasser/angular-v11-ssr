@@ -5,7 +5,7 @@
   background-attachment: scroll;
   background-position: center center;
   overflow: hidden;
-  padding: 130px 0 0px;
+  padding: 130px 0 px;
   background-size: cover;
 
   &::before {
@@ -24,9 +24,8 @@
     color: #ffffff;
     font-size: 90px;
     font-weight: 700;
-    margin: 0;
+    margin: 130px 0;
     text-transform: uppercase;
-    padding-bottom: 56px;
   }
 
   ul {

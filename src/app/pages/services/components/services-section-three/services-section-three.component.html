@@ -1,36 +1,35 @@
 <section class="services">
   <div class="container">
     <div class="services__block-title">
-      <p>What we offer</p>
-      <h3>financial advisory</h3>
+      <p>There's even more</p>
+      <h3>management consultancy</h3>
       <div class="leaf">
         <img src="assets/images/resources/leaf.png" alt="" />
       </div>
     </div>
 
-    <div fxLayout="row wrap" fxLayoutAlign="space-evenly">
+    <div
+      class="services__cards"
+      fxLayout="row wrap"
+      fxLayoutAlign="space-evenly start"
+    >
       <ng-container *ngFor="let service of services">
         <div
-          class="services__card wow fadeInLeft"
+          class="services__card wow fadeInRight"
           data-wow-delay="500ms"
-          fxFlex="30"
+          fxFlex="35"
           fxLayout="column"
-          fxLayoutAlign="center center"
         >
+          <h3>{{ service?.title }}</h3>
           <div
             class="services__card-image"
             fxLayout
             fxLayoutAlign="center center"
           >
             <img [src]="service?.image" alt="" />
-          </div>
-          <h3>{{ service?.title }}</h3>
-          <div
-            class="services__card-read-more"
-            fxLayout
-            fxLayoutAlign="center center"
-          >
-            <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
+            <div class="hover-box" fxLayout fxLayoutAlign="center center">
+              <fa-icon [icon]="['fas', 'arrow-right']"></fa-icon>
+            </div>
           </div>
         </div>
       </ng-container>
