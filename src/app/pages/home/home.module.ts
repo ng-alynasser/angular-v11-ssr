@@ -6,6 +6,7 @@ import { HomeCarouselComponent } from './components/home-carousel/home-carousel.
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ServicesSectionComponent } from './components/services-section/services-section.component';
 import { TrustSectionComponent } from './components/trust-section/trust-section.component';
+import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TrustSectionComponent } from './components/trust-section/trust-section.
     HomeCarouselComponent,
     ServicesSectionComponent,
     TrustSectionComponent,
+    ExperienceSectionComponent,
   ],
   imports: [SharedModule, HomeRoutingModule, CarouselModule],
 })
