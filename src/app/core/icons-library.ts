@@ -4,12 +4,28 @@ import {
   faInstagram,
   faTwitter,
   faDribbble,
+  faEnvira,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faCheck,
   faSeedling,
   faProjectDiagram,
   faArrowRight,
+  faHandHoldingWater,
+  faHandHoldingMedical,
+  faGasPump,
+  faIndustry,
+  faPlaceOfWorship,
+  faPrescriptionBottle,
+  faCogs,
+  faBusAlt,
+  faHardHat,
+  faSatelliteDish,
+  faPlug,
+  faHands,
+  faChalkboardTeacher,
+  faNetworkWired,
+  faTools,
 } from '@fortawesome/free-solid-svg-icons';
 
 export function buildIconLibrary(library: FaIconLibrary): void {
@@ -21,6 +37,20 @@ export function buildIconLibrary(library: FaIconLibrary): void {
     faCheck,
     faSeedling,
     faProjectDiagram,
-    faArrowRight
+    faArrowRight,
+    faHandHoldingWater,
+    faGasPump,
+    faIndustry,
+    faPlaceOfWorship,
+    faPrescriptionBottle,
+    faBusAlt,
+    faHardHat,
+    faSatelliteDish,
+    faPlug,
+    faHands,
+    faHandHoldingMedical,
+    faChalkboardTeacher,
+    faNetworkWired,
+    faTools
   );
 }

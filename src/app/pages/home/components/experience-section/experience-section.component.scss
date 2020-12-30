@@ -1,0 +1,37 @@
+.experience {
+  padding: 70px 0 65px;
+  background-color: var(--base-color);
+
+  h2 {
+    font-size: 55px;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: var(--black);
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+
+  &__card {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--black);
+    color: #fff;
+    margin-top: 40px;
+
+    h3 {
+      letter-spacing: 1px;
+      font-size: 22px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    fa-icon {
+      color: var(--base-color);
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}

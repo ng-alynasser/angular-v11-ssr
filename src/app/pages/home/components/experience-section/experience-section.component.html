@@ -1,1 +1,32 @@
-<p>experience-section works!</p>
+<div class="experience">
+  <div class="container">
+    <h2>Experience and Know-How in Research & Consulting</h2>
+    <p>
+      Since its inception in 1981, SAGECO has carried out over 300 consultancy
+      projects including Feasibility Studies, either independently or in
+      partnership with renowned international consulting firms, whereby it has
+      built up a substantial bank of expertise. These consultancy assignments
+      have predominantly been rendered in the following sectors:
+    </p>
+
+    <div
+      class="experience__cards"
+      fxLayout="row wrap"
+      fxLayoutGap="30px"
+      fxLayoutAlign="center"
+    >
+      <ng-container *ngFor="let card of cards">
+        <div
+          class="experience__card wow fadeInUp"
+          data-wow-delay="500ms"
+          fxFlex="20"
+          fxLayout="column"
+          fxLayoutAlign="space-evenly"
+        >
+          <fa-icon [icon]="card?.icon"></fa-icon>
+          <h3>{{ card?.title }}</h3>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
