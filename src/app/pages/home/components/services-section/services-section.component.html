@@ -1,6 +1,6 @@
 <section class="services">
   <div class="container">
-    <div class="services__block-title">
+    <div class="services__block-title wow fadeInDown" data-wow-delay="500ms">
       <p>What we do</p>
       <h3>Services we offer</h3>
       <div class="leaf">
@@ -9,10 +9,15 @@
     </div>
 
     <owl-carousel-o [options]="customOptions">
-      <ng-container *ngFor="let service of services">
+      <ng-container *ngFor="let service of services; let i = index">
         <ng-template carouselSlide>
           <div class="carousel-item">
-            <div fxLayout fxLayoutAlign="center center">
+            <div
+              fxLayout
+              fxLayoutAlign="center center"
+              class="wow fadeInLeft"
+              [attr.data-wow-delay]="(i + 1) * 200 + 'ms'"
+            >
               <img [src]="service?.image" alt="" />
             </div>
             <div class="hover-box">

@@ -1,0 +1,38 @@
+.partners {
+  padding: 120px 0 120px 0;
+
+  &__block-title {
+    margin-bottom: 55px;
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+      color: var(--primary-color);
+      letter-spacing: 0.2em;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 70px;
+      color: var(--black);
+      font-weight: 700;
+      line-height: 1em;
+    }
+  }
+
+  .carousel-item {
+    .carousel-img {
+      width: 150px;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}

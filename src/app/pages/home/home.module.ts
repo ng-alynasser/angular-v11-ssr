@@ -9,6 +9,7 @@ import { TrustSectionComponent } from './components/trust-section/trust-section.
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { ClientsCarouselComponent } from './components/clients-carousel/clients-carousel.component';
 import { VisionSectionComponent } from './components/vision-section/vision-section.component';
+import { PartnersCarouselComponent } from './components/partners-carousel/partners-carousel.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { VisionSectionComponent } from './components/vision-section/vision-secti
     ExperienceSectionComponent,
     ClientsCarouselComponent,
     VisionSectionComponent,
+    PartnersCarouselComponent,
   ],
   imports: [SharedModule, HomeRoutingModule, CarouselModule],
 })

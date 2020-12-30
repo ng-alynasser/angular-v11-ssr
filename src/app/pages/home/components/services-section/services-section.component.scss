@@ -34,7 +34,7 @@
     &:hover {
       &::before {
         position: absolute;
-        background-color: rgba(#000, 0.5);
+        background-color: rgba(#000, 0.75);
         top: 0;
         bottom: 0;
         left: 0;
@@ -59,6 +59,7 @@
 
       h3 {
         font-size: 30px;
+        color: #fff;
         font-weight: 700;
       }
 

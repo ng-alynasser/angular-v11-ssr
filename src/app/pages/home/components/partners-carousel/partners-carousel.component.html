@@ -1,0 +1,28 @@
+<section class="partners">
+  <div class="container">
+    <div class="partners__block-title wow fadeInUp" data-wow-delay="500ms">
+      <p>Who believes in us</p>
+      <h3>meet the partners</h3>
+      <div class="leaf">
+        <img src="assets/images/resources/leaf.png" alt="" />
+      </div>
+    </div>
+
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let partner of partners; let i = index">
+        <ng-template carouselSlide>
+          <div class="carousel-item">
+            <div fxLayout fxLayoutAlign="center center" class="carousel-img">
+              <img
+                [src]="partner?.image"
+                alt=""
+                class="wow fadeInRight"
+                [attr.data-wow-delay]="(i + 1) * 200 + 'ms'"
+              />
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>
