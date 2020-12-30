@@ -22,12 +22,14 @@
             </div>
             <div class="hover-box">
               <h3>{{ service?.title }}</h3>
-              <button class="button">Read more</button>
+              <button class="button" routerLink="/services">Read more</button>
             </div>
           </div>
         </ng-template>
       </ng-container>
     </owl-carousel-o>
   </div>
-  <button class="button button-explore">explore more</button>
+  <button class="button button-explore" routerLink="/services">
+    explore more
+  </button>
 </section>
