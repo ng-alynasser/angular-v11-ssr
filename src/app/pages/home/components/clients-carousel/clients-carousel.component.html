@@ -1,0 +1,23 @@
+<section class="clients">
+  <div class="container">
+    <div class="clients__block-title">
+      <p>Who shares our success</p>
+      <h3>meet the clients</h3>
+      <div class="leaf">
+        <img src="assets/images/resources/leaf.png" alt="" />
+      </div>
+    </div>
+
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let client of clients">
+        <ng-template carouselSlide>
+          <div class="carousel-item">
+            <div fxLayout fxLayoutAlign="center center" class="carousel-img">
+              <img [src]="client?.image" alt="" />
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>

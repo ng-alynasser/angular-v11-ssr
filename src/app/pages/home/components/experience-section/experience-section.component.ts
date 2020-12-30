@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-experience-section',
@@ -7,66 +8,111 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExperienceSectionComponent implements OnInit {
-  cards = [
+  cards: { title: string; icon: IconProp }[] = [
     {
       title: 'Water Technologies',
-      icon: 'hand-holding-water',
+      icon: {
+        iconName: 'hand-holding-water',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Petrochemicals',
-      icon: 'gas-pump',
+      icon: {
+        iconName: 'gas-pump',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Industrial',
-      icon: 'industry',
+      icon: {
+        iconName: 'industry',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Real Estate',
-      icon: 'place-of-worship',
+      icon: {
+        iconName: 'place-of-worship',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Plastics',
-      icon: 'prescription-bottle',
+      icon: {
+        iconName: 'prescription-bottle',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Engineering',
-      icon: 'hard-hat',
+      icon: {
+        iconName: 'hard-hat',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Automobile',
-      icon: 'bus-alt',
+      icon: {
+        iconName: 'bus-alt',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Construction products',
-      icon: 'tools',
+      icon: {
+        iconName: 'tools',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Telecommunication',
-      icon: 'satellite-dish',
+      icon: {
+        iconName: 'satellite-dish',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Energy',
-      icon: 'plug',
+      icon: {
+        iconName: 'plug',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Consumer Products',
-      icon: 'hands',
+      icon: {
+        iconName: 'hands',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Medical',
-      icon: 'hand-holding-medical',
+      icon: {
+        iconName: 'hand-holding-medical',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Food and Agriculture',
-      icon: 'seedling',
+      icon: {
+        iconName: 'seedling',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Education and IT',
-      icon: 'chalkboard-teacher',
+      icon: {
+        iconName: 'chalkboard-teacher',
+        prefix: 'fas',
+      },
     },
     {
       title: 'Supply Chain Management',
-      icon: 'network-wired',
+      icon: {
+        iconName: 'network-wired',
+        prefix: 'fas',
+      },
     },
   ];
 
