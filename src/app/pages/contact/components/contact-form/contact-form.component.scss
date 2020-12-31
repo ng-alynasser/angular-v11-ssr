@@ -1,9 +1,15 @@
+@import "src/styles";
+
 .contact {
   .contact-form-wrap {
     position: relative;
     padding: 120px 0;
     margin-right: -20px;
     z-index: 1;
+
+    @include media("<md") {
+      padding: 60px 0 30px;
+    }
 
     &::before {
       border-top-right-radius: 5px;
@@ -15,13 +21,22 @@
       right: 0;
       background: var(--primary-color);
       z-index: -1;
+
+      @include media("<md") {
+        display: none;
+      }
     }
   }
 
   &__block-title {
     margin-bottom: 55px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--primary-color);
+
+    @include media("<md") {
+      text-align: center;
+      margin-bottom: 35px;
+    }
 
     p {
       letter-spacing: 0.2em;
@@ -35,10 +50,18 @@
       font-size: 70px;
       font-weight: 700;
       line-height: 1em;
+
+      @include media("<md") {
+        font-size: 50px;
+      }
     }
   }
 
   .contact-questions {
+    @include media("<md") {
+      padding: 0;
+    }
+
     .questions-title {
       p {
         margin-top: 30px;
@@ -47,6 +70,10 @@
 
       h3 {
         color: var(--black);
+
+        @include media("<md") {
+          font-size: 30px;
+        }
       }
     }
 
@@ -64,6 +91,9 @@
 
   .contact-form-inputs {
     margin-right: 60px;
+    @include media("<md") {
+      margin-right: 0;
+    }
   }
 
   .input-group {
@@ -86,6 +116,11 @@
       letter-spacing: 1px;
       transition: all 500ms ease;
 
+      @include media("<md") {
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+
       &:hover {
         color: #fff;
         background-color: var(--black);
@@ -107,6 +142,12 @@
     color: #878986;
     padding-left: 30px;
     border-radius: 5px;
+
+    @include media("<md") {
+      height: 50px;
+      font-size: 14px;
+      padding-left: 15px;
+    }
   }
 
   .input-group textarea {

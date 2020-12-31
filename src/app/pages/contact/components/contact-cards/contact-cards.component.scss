@@ -1,5 +1,11 @@
+@import "src/styles";
+
 .contact-cards {
   padding: 80px 0;
+
+  @include media("<md") {
+    padding: 40px;
+  }
 }
 
 .contact-card {
@@ -7,8 +13,12 @@
   transition: 500ms all ease;
   padding: 40px;
 
+  @include media("<md") {
+    text-align: center;
+  }
+
   h3 {
-    text-transform: upper;
+    text-transform: uppercase;
     color: var(--black);
     font-size: 30px;
   }

@@ -1,7 +1,13 @@
-<div class="contact-cards container" fxLayout fxLayoutAlign="space-between">
+<div
+  class="contact-cards container"
+  fxLayout="row wrap"
+  fxLayoutAlign="space-between"
+  fxLayoutAlign.lt-sm="space-evenly"
+>
   <div
     class="contact-card animate__animated animate__fadeInRight animate__delay-1s"
     fxFlex="20"
+    fxFlex.lt-sm="100"
     *ngFor="let contact of contacts"
   >
     <h3>{{ contact?.city }}</h3>

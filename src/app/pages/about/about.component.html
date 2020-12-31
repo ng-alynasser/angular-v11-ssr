@@ -1,7 +1,12 @@
 <app-about-header></app-about-header>
-<section class="about container" fxLayout fxLayoutAlign="space-between">
+<section
+  class="about container"
+  fxLayout="row wrap"
+  fxLayoutAlign="space-between"
+>
   <div
     fxFlex="40"
+    fxFlex.lt-sm="100"
     class="about__block-title wow fadeInDown"
     data-wow-delay="500ms"
   >
@@ -15,7 +20,7 @@
     </div>
   </div>
 
-  <div fxFlex="50" class="about__content">
+  <div class="about__content" fxFlex.lt-sm="100">
     <p class="animate__animated animate__fadeInRight animate__delay-1s">
       Saudi German Development and Investment Company Limited (SAGECO) is a
       consultancy, advisory and project development company which wasestablished

@@ -4,7 +4,12 @@
     fxLayout="row wrap"
     fxLayoutAlign="space-between start"
   >
-    <div class="contact-form-wrap" fxFlex="55">
+    <div
+      class="contact-form-wrap"
+      fxFlex="55"
+      fxFlex.lt-sm="100"
+      fxFlexOrder.lt-sm="2"
+    >
       <div class="contact__block-title">
         <p>contact with us</p>
         <h3>write us a message</h3>
@@ -17,19 +22,19 @@
         fxLayoutAlign="space-evenly"
         class="contact-form-inputs"
       >
-        <div class="input-group" fxFlex="45">
+        <div class="input-group" fxFlex="45" fxFlex.lt-sm="100">
           <input type="text" name="name" placeholder="Your Name" />
         </div>
-        <div class="input-group" fxFlex="45">
+        <div class="input-group" fxFlex="45" fxFlex.lt-sm="100">
           <input type="text" name="email" placeholder="Email Address" />
         </div>
-        <div class="input-group" fxFlex="45">
+        <div class="input-group" fxFlex="45" fxFlex.lt-sm="100">
           <input type="text" name="phone" placeholder="Phone Number" />
         </div>
-        <div class="input-group" fxFlex="45">
+        <div class="input-group" fxFlex="45" fxFlex.lt-sm="100">
           <input type="text" name="subject" placeholder="Subject" />
         </div>
-        <div class="input-group" fxFlex="95">
+        <div class="input-group" fxFlex="95" fxFlex.lt-sm="100">
           <textarea name="message" placeholder="Write Message"></textarea>
         </div>
         <div class="input-group contact-button">
@@ -38,7 +43,12 @@
       </form>
     </div>
 
-    <div class="contact-questions" fxFlex="40">
+    <div
+      class="contact-questions"
+      fxFlex="40"
+      fxFlex.lt-sm="100"
+      fxFlexOrder.lt-sm="1"
+    >
       <div fxLayout fxLayoutAlign="center center" class="contact-image">
         <img src="assets/images/resources/ask-question.jpg" alt="" />
       </div>
