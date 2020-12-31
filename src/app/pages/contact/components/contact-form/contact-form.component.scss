@@ -31,9 +31,10 @@
   &__block-title {
     margin-bottom: 55px;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: #fff;
 
     @include media("<md") {
+      color: var(--primary-color);
       text-align: center;
       margin-bottom: 35px;
     }

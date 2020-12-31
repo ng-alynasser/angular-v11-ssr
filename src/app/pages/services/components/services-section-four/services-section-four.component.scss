@@ -1,11 +1,21 @@
+@import "src/styles";
+
 .services {
   padding: 80px 0 20px;
   background-color: #f5f0e9;
+
+  @include media("<md") {
+    padding-top: 40px;
+  }
 
   &__block-title {
     margin-bottom: 55px;
     text-align: center;
     text-transform: uppercase;
+
+    @include media("<md") {
+      margin: 25px;
+    }
 
     p {
       color: var(--primary-color);
@@ -21,6 +31,10 @@
       color: var(--black);
       font-weight: 700;
       line-height: 1em;
+
+      @include media("<md") {
+        font-size: 40px;
+      }
     }
   }
 
@@ -28,12 +42,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     p {
       position: relative;
       flex-basis: 45%;
       padding: 0 25px;
       font-size: 20px;
+
+      @include media("<md") {
+        flex-basis: 100%;
+        font-size: 15px;
+      }
 
       &::before {
         position: absolute;
