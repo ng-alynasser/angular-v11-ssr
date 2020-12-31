@@ -10,19 +10,18 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class ClientsCarouselComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
-    dots: true,
     navSpeed: 700,
     autoplay: true,
-    dotsEach: true,
+    dots: false,
     responsive: {
       0: {
         items: 2,
       },
-      400: {
-        items: 2,
+      600: {
+        items: 4,
       },
       740: {
-        items: 3,
+        items: 4,
       },
       940: {
         items: 5,

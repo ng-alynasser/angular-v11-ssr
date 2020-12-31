@@ -1,8 +1,15 @@
+@import "src/styles";
+
 .footer {
   position: relative;
   display: block;
   background: var(--black);
   padding: 114px 0 40px;
+
+  @include media("<md") {
+    padding: 0 0 30px;
+    text-align: center;
+  }
 
   &__image {
     position: absolute;
@@ -21,6 +28,12 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    @include media("<md") {
+      display: inline-block;
+      margin: 20px 0 10px;
+      border-bottom: 3px solid var(--base-color);
+    }
+
     &::before {
       position: absolute;
       bottom: -8px;
@@ -30,6 +43,10 @@
       background: var(--base-color);
       content: "";
       border-radius: 5px;
+
+      @include media("<md") {
+        display: none;
+      }
     }
   }
 

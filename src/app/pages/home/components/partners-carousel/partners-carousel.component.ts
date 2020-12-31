@@ -10,10 +10,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class PartnersCarouselComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
-    dots: true,
+    dots: false,
     navSpeed: 700,
     autoplay: true,
-    dotsEach: true,
 
     responsive: {
       0: {
