@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {
+  Routes,
+  RouterModule,
+  PreloadAllModules,
+  PreloadingStrategy,
+} from '@angular/router';
 import { MetaGuard } from '@ngx-meta/core';
 import { MainComponent } from './layout/main.component';
 
@@ -74,6 +79,7 @@ const routes: Routes = [
       initialNavigation: 'enabled',
       scrollPositionRestoration: 'top',
       onSameUrlNavigation: 'reload',
+      preloadingStrategy: PreloadAllModules,
     }),
   ],
   exports: [RouterModule],

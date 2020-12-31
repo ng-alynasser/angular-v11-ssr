@@ -1,1 +1,14 @@
-<p>gallery works!</p>
+<app-gallery-header></app-gallery-header>
+<div class="gallery container">
+  <ngx-masonry [options]="options">
+    <div
+      ngxMasonryItem
+      class="masonry-item"
+      *ngFor="let item of masonryItems; let i = index"
+    >
+      <div fxLayout fxLayoutAlign="center center" (click)="open(i)">
+        <img [src]="item?.image" alt="" />
+      </div>
+    </div>
+  </ngx-masonry>
+</div>

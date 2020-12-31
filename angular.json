@@ -29,6 +29,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/wowjs/css/libs/animate.css",
+              "node_modules/ngx-lightbox/lightbox.css",
               "src/styles.scss"
             ],
             "scripts": ["node_modules/wowjs/dist/wow.js"]

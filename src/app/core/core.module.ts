@@ -30,6 +30,7 @@ import {
 } from '@fortawesome/angular-fontawesome';
 import { buildIconLibrary } from './icons-library';
 import { NgwWowModule } from 'ngx-wow';
+import { NgxMasonryModule } from 'ngx-masonry';
 
 @NgModule({
   declarations: [MainComponent, HeaderComponent, FooterComponent],
@@ -52,6 +53,7 @@ import { NgwWowModule } from 'ngx-wow';
     SharedModule,
     FontAwesomeModule,
     NgwWowModule,
+    NgxMasonryModule,
   ],
   providers: [
     {
