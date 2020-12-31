@@ -61,4 +61,47 @@
       <fa-icon [icon]="['fab', 'dribbble']"></fa-icon>
     </li>
   </ul>
+
+  <div
+    fxFlex="12"
+    class="icon-navbar"
+    [class]="{ change: toggled }"
+    fxHide.gt-md
+    #navbarIcon
+    (click)="toggleIcon()"
+  >
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="responsive-navbar" [class]="{ show: toggled }">
+    <a routerLink="/home" (click)="toggleIcon()" routerLinkActive="active">
+      {{ "HEADER.HOME" | translate }}</a
+    >
+    <a
+      routerLink="/services"
+      (click)="toggleIcon()"
+      routerLinkActive="active"
+      >{{ "HEADER.SERVICES" | translate }}</a
+    >
+    <a
+      routerLink="/projects"
+      (click)="toggleIcon()"
+      routerLinkActive="active"
+      >{{ "HEADER.PROJECTS" | translate }}</a
+    >
+    <a routerLink="/news" (click)="toggleIcon()" routerLinkActive="active">{{
+      "HEADER.NEWS" | translate
+    }}</a>
+    <a routerLink="/gallery" (click)="toggleIcon()" routerLinkActive="active">{{
+      "HEADER.GALLERY" | translate
+    }}</a>
+    <a routerLink="/about" (click)="toggleIcon()" routerLinkActive="active">{{
+      "HEADER.ABOUT" | translate
+    }}</a>
+    <a routerLink="/contact" (click)="toggleIcon()" routerLinkActive="active">{{
+      "HEADER.CONTACT" | translate
+    }}</a>
+  </div>
 </header>

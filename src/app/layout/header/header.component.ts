@@ -4,6 +4,8 @@ import {
   Output,
   EventEmitter,
   Input,
+  ElementRef,
+  ViewChild,
 } from '@angular/core';
 import { Language } from 'src/app/core/models/language.model';
 
@@ -17,6 +19,8 @@ export class HeaderComponent {
   @Output() readonly toggleLanguage: EventEmitter<Language>;
   @Input() availableLanguages: Language[] = [];
   @Input() currentLanguage = '';
+  @ViewChild('navbarIcon') icon: ElementRef;
+  toggled: boolean;
 
   constructor() {
     this.toggleLanguage = new EventEmitter();
@@ -24,5 +28,9 @@ export class HeaderComponent {
 
   onToggleLanguage(language: Language): void {
     this.toggleLanguage.emit(language);
+  }
+
+  toggleIcon(): void {
+    this.toggled = !this.toggled;
   }
 }
