@@ -10,35 +10,43 @@ export class ServicesSectionOneComponent implements OnInit {
   public services = [
     {
       title: 'Financial Due Diligence',
-      image: 'assets/images/services/Financial-Due-Diligence.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436335/sageco-services/Financial-Due-Diligence_tk1rhj.jpg',
     },
     {
       title: 'Financial Evaluation',
-      image: 'assets/images/services/finance-side.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436334/sageco-services/finance-side_d8kvyh.jpg',
     },
     {
       title: 'Investment Advisory',
-      image: 'assets/images/services/investment-advisory.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436338/sageco-services/investment-advisory_x8dwvi.jpg',
     },
     {
       title: 'Development Advisory',
-      image: 'assets/images/services/Valuation-Development-Advisory.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436334/sageco-services/Valuation-Development-Advisory_ixvmnh.jpg',
     },
     {
       title: 'Internal Audit',
-      image: 'assets/images/services/internal-audit-process-flow.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436337/sageco-services/internal-audit-process-flow_xh9bxj.jpg',
     },
     {
       title: 'Financial Appraisals & Modeling',
-      image: 'assets/images/services/analyse-real-estate-investment.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436332/sageco-services/analyse-real-estate-investment_agvqt6.jpg',
     },
     {
       title: 'IFRS Implementation',
-      image: 'assets/images/services/IFR.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436338/sageco-services/IFR_vgwewy.jpg',
     },
     {
       title: 'VAT Implementation',
-      image: 'assets/images/services/VAT.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436332/sageco-services/VAT_tlkr69.jpg',
     },
   ];
 

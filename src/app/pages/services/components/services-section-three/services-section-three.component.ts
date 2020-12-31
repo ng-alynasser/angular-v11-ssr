@@ -10,23 +10,28 @@ export class ServicesSectionThreeComponent implements OnInit {
   services = [
     {
       title: 'Fiscal Adjustment Program',
-      image: 'assets/images/services/fiscal-balance.png',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436335/sageco-services/fiscal-balance_blrodo.png',
     },
     {
       title: 'Project Administration',
-      image: 'assets/images/services/planning.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436340/sageco-services/planning_sgn51v.jpg',
     },
     {
       title: 'Post-Merger Integration',
-      image: 'assets/images/services/post-merger.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436338/sageco-services/post-merger_wxdphs.jpg',
     },
     {
       title: 'Supply Chain Management',
-      image: 'assets/images/services/supply-chain.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436332/sageco-services/supply-chain_jeuqnb.jpg',
     },
     {
       title: 'Inventory Management and Registry',
-      image: 'assets/images/services/DataManagement.jpg',
+      image:
+        'https://res.cloudinary.com/alynasser/image/upload/v1609436335/sageco-services/DataManagement_fq1tpb.jpg',
     },
   ];
 
