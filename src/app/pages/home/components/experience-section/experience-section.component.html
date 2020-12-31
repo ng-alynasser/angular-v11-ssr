@@ -15,6 +15,7 @@
       class="experience__cards"
       fxLayout="row wrap"
       fxLayoutGap="30px"
+      fxLayoutGap.lt-sm="15px"
       fxLayoutAlign="center"
     >
       <ng-container *ngFor="let card of cards; let i = index">
@@ -22,6 +23,7 @@
           class="experience__card wow fadeInUp"
           data-wow-delay="500ms"
           fxFlex="20"
+          fxFlex.lt-sm="45"
           fxLayout="column"
           [attr.data-wow-delay]="(i + 1) * 100 + 'ms'"
         >

@@ -1,8 +1,13 @@
+@import "src/styles";
+
 .header {
   &__wrapper {
     padding: 1.8em;
     background-color: #fff;
-    // background-color: #f5f6f5;
+
+    @include media("<md") {
+      padding: 1em;
+    }
   }
 
   &__logo {

@@ -4,3 +4,13 @@
 @import "./assets/scss/bootstrap";
 @import "./assets/scss/normalize";
 @import "./assets/scss/rtl";
+@import "~include-media/dist/_include-media";
+
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 600px,
+  lg: 960px,
+  xl: 1280px,
+  xxl: 1600px,
+);

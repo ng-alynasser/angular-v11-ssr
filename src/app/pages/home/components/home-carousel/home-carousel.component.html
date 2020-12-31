@@ -1,15 +1,15 @@
 <section class="banner">
-  <div class="banner__circle-1">
+  <div class="banner__circle-1" fxHide.lt-sm>
     <img src="assets/images/home-slider/round_1.png" alt="" />
   </div>
-  <div class="banner__certification">
+  <div class="banner__certification" fxHide.lt-md>
     <img src="assets/images/home-slider/certified_logo.png" alt="" />
   </div>
 
   <owl-carousel-o [options]="customOptions" #owlCar>
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center space-between">
-        <div fxFlex="50" class="banner__content">
+        <div fxFlex="50" fxFlex.lt-sm="100" class="banner__content">
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s"
           >
@@ -40,6 +40,7 @@
           fxLayout
           fxLayoutAlign="center center"
           fxFlex="50"
+          fxHide.lt-sm
         >
           <img src="assets/images/home-slider/slide-1.jpg" alt="" />
         </div>
@@ -47,7 +48,7 @@
     </ng-template>
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center stretch">
-        <div fxFlex="50" class="banner__content">
+        <div fxFlex="50" fxFlex.lt-sm="100" class="banner__content">
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s animate__slow"
           >
@@ -82,15 +83,11 @@
             To be the most recognized multidisciplinary research and consulting
             firm and strategic partner to our most sought-after clien ts.
           </p>
-          <div
-            class="banner__discover-btn animate__animated animate__fadeInUp animate__delay-3s aniamte__slow"
-          >
-            <a>Discover more</a>
-          </div>
         </div>
         <div
           class="banner__bg animate__animated animate__fadeIn animate__slower"
           fxFlex="50"
+          fxHide.lt-sm
         >
           <img src="assets/images/home-slider/slide-2.jpg" alt="" />
         </div>

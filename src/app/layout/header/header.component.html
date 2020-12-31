@@ -5,10 +5,16 @@
     fxLayout
     fxLayoutAlign="center center"
     fxFlex="10"
+    fxFlex.lt-sm="20"
   >
     <img src="assets/images/resources/logo.png" alt="" />
   </a>
-  <ul class="header__nav" fxLayout fxLayoutAlign="space-around center">
+  <ul
+    class="header__nav"
+    fxLayout
+    fxLayoutAlign="space-around center"
+    fxHide.lt-md
+  >
     <li routerLink="/home" routerLinkActive="active">
       <a> {{ "HEADER.HOME" | translate }}</a>
     </li>
