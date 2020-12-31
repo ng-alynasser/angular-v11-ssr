@@ -1,0 +1,12 @@
+<div class="contact-cards container" fxLayout fxLayoutAlign="space-between">
+  <div
+    class="contact-card animate__animated animate__fadeInRight animate__delay-1s"
+    fxFlex="20"
+    *ngFor="let contact of contacts"
+  >
+    <h3>{{ contact?.city }}</h3>
+    <p>{{ contact?.address }}</p>
+    <a href="mailto:needhelp@sageco.com"> {{ contact?.email }}</a>
+    <a href="tel:555-888-0000">{{ contact?.phone }}</a>
+  </div>
+</div>

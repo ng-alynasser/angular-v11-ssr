@@ -1,0 +1,33 @@
+.contact-cards {
+  padding: 80px 0;
+}
+
+.contact-card {
+  background-color: #fff;
+  transition: 500ms all ease;
+  padding: 40px;
+
+  h3 {
+    text-transform: upper;
+    color: var(--black);
+    font-size: 30px;
+  }
+
+  p,
+  a {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    transition: all 500ms ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &:hover {
+    background-color: #f5f0e9;
+  }
+}

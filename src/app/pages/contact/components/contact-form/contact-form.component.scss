@@ -1,0 +1,116 @@
+.contact {
+  .contact-form-wrap {
+    position: relative;
+    padding: 120px 0;
+    margin-right: -20px;
+    z-index: 1;
+
+    &::before {
+      border-top-right-radius: 5px;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -10000px;
+      bottom: 0;
+      right: 0;
+      background: var(--primary-color);
+      z-index: -1;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 55px;
+    text-transform: uppercase;
+    color: #fff;
+
+    p {
+      letter-spacing: 0.2em;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 1em;
+    }
+  }
+
+  .contact-questions {
+    .questions-title {
+      p {
+        margin-top: 30px;
+        color: var(--primary-color);
+      }
+
+      h3 {
+        color: var(--black);
+      }
+    }
+
+    .contact-image {
+      border: 2px solid var(--primary-color);
+      padding: 4px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+      }
+    }
+  }
+
+  .contact-form-inputs {
+    margin-right: 60px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .contact-button {
+    button {
+      display: block;
+      margin-bottom: 0;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: var(--black);
+      background-color: var(--base-color);
+      outline: none;
+      border: none;
+      font-size: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 500ms ease;
+
+      &:hover {
+        color: #fff;
+        background-color: var(--black);
+      }
+    }
+  }
+
+  .input-group
+    input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]),
+  .input-group textarea {
+    width: 100%;
+    height: 80px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #eceeef;
+    font-size: 16px;
+    font-weight: 500;
+    color: #878986;
+    padding-left: 30px;
+    border-radius: 5px;
+  }
+
+  .input-group textarea {
+    height: 170px;
+    padding-top: 20px;
+  }
+}

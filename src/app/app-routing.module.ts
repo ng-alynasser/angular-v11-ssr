@@ -54,6 +54,11 @@ const routes: Routes = [
             (m) => m.ProjectsModule
           ),
       },
+      {
+        path: 'contact',
+        loadChildren: () =>
+          import('./pages/contact/contact.module').then((m) => m.ContactModule),
+      },
     ],
     canActivateChild: [MetaGuard],
     data: {
