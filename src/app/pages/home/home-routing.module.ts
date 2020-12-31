@@ -10,7 +10,6 @@ const routes: Routes = [
     data: {
       meta: {
         title: 'HOME.PAGE_TITLE',
-        override: true,
         description: 'HOME.META_DESCRIPTION',
       },
     },

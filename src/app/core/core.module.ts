@@ -42,11 +42,6 @@ import { NgwWowModule } from 'ngx-wow';
       provide: ConfigLoader,
       useFactory: configFactory,
     }),
-    MetaModule.forRoot({
-      provide: MetaLoader,
-      useFactory: metaFactory,
-      deps: [ConfigService, TranslateService],
-    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

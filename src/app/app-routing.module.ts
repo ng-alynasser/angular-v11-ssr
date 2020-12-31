@@ -60,12 +60,6 @@ const routes: Routes = [
           import('./pages/contact/contact.module').then((m) => m.ContactModule),
       },
     ],
-    canActivateChild: [MetaGuard],
-    data: {
-      i18n: {
-        isRoot: true,
-      },
-    },
   },
   {
     path: '**',

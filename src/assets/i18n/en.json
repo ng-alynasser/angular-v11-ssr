@@ -10,11 +10,19 @@
     "CONTACT": "Contact"
   },
   "HOME": {
-    "PAGE_TITLE": "Home",
+    "PAGE_TITLE": "SAGEGO | Home",
     "META_DESCRIPTION": "Homepage"
   },
+  "SERVICES": {
+    "PAGE_TITLE": "SAGEO | Services",
+    "META_DESCRIPTION": "About us page"
+  },
   "ABOUT": {
-    "PAGE_TITLE": "About",
+    "PAGE_TITLE": "SAGECO | About",
+    "META_DESCRIPTION": "About us page"
+  },
+  "CONTACT": {
+    "PAGE_TITLE": "SAGECO | Contact",
     "META_DESCRIPTION": "About us page"
   }
 }
