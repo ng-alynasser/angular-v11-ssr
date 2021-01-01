@@ -1,4 +1,10 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,7 +13,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home-carousel.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeCarouselComponent implements OnInit {
+export class HomeCarouselComponent implements AfterViewInit {
   customOptions: OwlOptions = {
     loop: true,
     dots: false,
@@ -29,7 +35,12 @@ export class HomeCarouselComponent implements OnInit {
     },
   };
 
+  @ViewChild('carouselContent') carouselContent: ElementRef<HTMLDivElement>;
+  imageHeight: string;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngAfterViewInit(): void {
+    console.log(this.carouselContent.nativeElement.clientHeight);
+    this.imageHeight = this.carouselContent.nativeElement.clientHeight + 'px';
+  }
 }

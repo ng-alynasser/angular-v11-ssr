@@ -9,7 +9,12 @@
   <owl-carousel-o [options]="customOptions" #owlCar>
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center space-between">
-        <div fxFlex="50" fxFlex.lt-sm="100" class="banner__content">
+        <div
+          fxFlex="50"
+          fxFlex.lt-sm="100"
+          class="banner__content"
+          #carouselContent
+        >
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s"
           >
@@ -32,7 +37,7 @@
           <div
             class="banner__discover-btn animate__animated animate__fadeInUp animate__delay-2s aniamte__slow"
           >
-            <a>Discover more</a>
+            <a routerLink="/services">Discover more</a>
           </div>
         </div>
         <div
@@ -42,7 +47,12 @@
           fxFlex="50"
           fxHide.lt-sm
         >
-          <img src="assets/images/home-slider/slide-1.jpg" alt="" />
+          <img
+            src="assets/images/home-slider/slide-1.jpg"
+            [style.height]="imageHeight"
+            [style.visibility]="!imageHeight ? 'hidden' : 'visible'"
+            alt=""
+          />
         </div>
       </div>
     </ng-template>
@@ -89,7 +99,11 @@
           fxFlex="50"
           fxHide.lt-sm
         >
-          <img src="assets/images/home-slider/slide-2.jpg" alt="" />
+          <img
+            src="assets/images/home-slider/slide-2.jpg"
+            [style.height]="imageHeight"
+            [style.visibility]="!imageHeight ? 'hidden' : 'visible'"
+          />
         </div>
       </div>
     </ng-template>
