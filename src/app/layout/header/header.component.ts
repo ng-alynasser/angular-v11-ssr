@@ -17,8 +17,6 @@ import { Language } from 'src/app/core/models/language.model';
 })
 export class HeaderComponent {
   @Output() readonly toggleLanguage: EventEmitter<void>;
-  @Input() availableLanguages: Language[] = [];
-  @Input() currentLanguage = '';
   @ViewChild('navbarIcon') icon: ElementRef;
   toggled: boolean;
 

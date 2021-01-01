@@ -1,8 +1,4 @@
-<app-header
-  [currentLanguage]="currentLanguage"
-  [availableLanguages]="availableLanguages"
-  (toggleLanguage)="toggleLanguage()"
-></app-header>
+<app-header (toggleLanguage)="toggleLanguage()"></app-header>
 
 <main class="page-wrapper">
   <router-outlet></router-outlet>

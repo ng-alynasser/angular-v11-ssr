@@ -13,7 +13,7 @@ export class PartnersCarouselComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     autoplay: true,
-
+    rtl: true,
     responsive: {
       0: {
         items: 2,

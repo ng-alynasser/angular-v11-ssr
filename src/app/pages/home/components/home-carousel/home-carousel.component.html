@@ -1,5 +1,9 @@
 <section class="banner">
-  <div class="banner__circle-1" fxHide.lt-sm>
+  <div
+    class="banner__circle-1"
+    fxHide.lt-sm
+    [fxHide]="(translateService.onLangChange | async)?.lang === 'ar'"
+  >
     <img src="assets/images/home-slider/round_1.png" alt="" />
   </div>
   <div class="banner__certification" fxHide.lt-md>
@@ -10,10 +14,12 @@
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center space-between">
         <div
+          [fxFlexOrder]="
+            (translateService.onLangChange | async)?.lang === 'ar' ? 1 : 2
+          "
           fxFlex="50"
           fxFlex.lt-sm="100"
           class="banner__content"
-          #carouselContent
         >
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s"
@@ -46,12 +52,11 @@
           fxLayoutAlign="center center"
           fxFlex="50"
           fxHide.lt-sm
+          [fxFlexOrder]="
+            (translateService.onLangChange | async)?.lang === 'ar' ? 2 : 1
+          "
         >
-          <img
-            src="assets/images/home-slider/slide-1.jpg"
-            [style.height]="imageHeight"
-            alt=""
-          />
+          <img src="assets/images/home-slider/slide-1.jpg" />
         </div>
       </div>
     </ng-template>
@@ -98,10 +103,7 @@
           fxFlex="50"
           fxHide.lt-sm
         >
-          <img
-            src="assets/images/home-slider/slide-2.jpg"
-            [style.height]="imageHeight"
-          />
+          <img src="assets/images/home-slider/slide-2.jpg" />
         </div>
       </div>
     </ng-template>

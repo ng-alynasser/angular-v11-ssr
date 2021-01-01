@@ -7,7 +7,6 @@ import {
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ConfigService } from '@ngx-config/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Language } from '../core/models/language.model';
 import { I18NService } from '../core/providers/i18n.service';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { merge } from 'rxjs';
@@ -71,17 +70,8 @@ export class MainComponent implements OnInit {
       .subscribe();
   }
 
-  get currentLanguage(): string {
-    return this.translate.currentLang;
-  }
-
-  get availableLanguages(): Language[] {
-    return this.config.getSettings('i18n.availableLanguages');
-  }
-
   toggleLanguage(): void {
-    const currentLanguage = this.translate.currentLang;
-    if (currentLanguage === 'en') {
+    if (this.translate.currentLang === 'en') {
       this.translate.use('ar');
     } else {
       this.translate.use('en');

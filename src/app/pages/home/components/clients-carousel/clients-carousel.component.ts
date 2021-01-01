@@ -13,6 +13,7 @@ export class ClientsCarouselComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     dots: false,
+    rtl: true,
     responsive: {
       0: {
         items: 2,

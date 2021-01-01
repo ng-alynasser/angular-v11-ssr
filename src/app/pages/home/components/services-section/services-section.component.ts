@@ -13,6 +13,7 @@ export class ServicesSectionComponent {
     dots: true,
     navSpeed: 700,
     autoplay: true,
+    rtl: true,
     animateIn: 'animate__animated  animate__fadeIn animate__slower',
     responsive: {
       0: {
