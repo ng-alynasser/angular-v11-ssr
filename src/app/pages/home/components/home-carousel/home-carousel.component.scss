@@ -111,6 +111,10 @@
     transition: all 0.5s ease;
     cursor: pointer;
 
+    a {
+      color: inherit;
+    }
+
     @include media("<lg") {
       font-size: 14px;
       padding: 10px 20px;

@@ -5,7 +5,9 @@ import {
   ElementRef,
   AfterViewInit,
 } from '@angular/core';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { LocalStorageService } from 'src/app/core/providers/local-storage.service';
 
 @Component({
   selector: 'app-home-carousel',
@@ -36,8 +38,33 @@ export class HomeCarouselComponent implements AfterViewInit {
   };
 
   @ViewChild('carouselContent') carouselContent: ElementRef<HTMLDivElement>;
-  imageHeight: string;
-  constructor() {}
+  imageHeight = '685px';
+
+  constructor(
+    private readonly localStorageService: LocalStorageService,
+    private readonly translateService: TranslateService
+  ) {
+    if (
+      this.localStorageService.get('uiLanguageCode') &&
+      this.localStorageService.get('uiLanguageCode') === 'ar'
+    ) {
+      this.customOptions.rtl = true;
+    } else {
+      this.customOptions.rtl = false;
+    }
+
+    this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      event.lang === 'ar'
+        ? (this.customOptions = Object.assign(
+            { rtl: true },
+            this.customOptions
+          ))
+        : (this.customOptions = Object.assign(
+            { rtl: false },
+            this.customOptions
+          ));
+    });
+  }
 
   ngAfterViewInit(): void {
     console.log(this.carouselContent.nativeElement.clientHeight);

@@ -28,12 +28,11 @@ export class I18NService {
     this.translate.onLangChange.subscribe({
       next: (event: LangChangeEvent) => {
         this.localStorageService.set('uiLanguageCode', event.lang);
-        const htmlElement = this.document.getElementsByTagName('html')[0];
-        htmlElement.setAttribute(
-          'dir',
-          this.getDirectionByCode(event.lang, availableLanguages)
+        this.document.documentElement.dir = this.getDirectionByCode(
+          event.lang,
+          availableLanguages
         );
-        htmlElement.setAttribute('lang', event.lang);
+        this.document.documentElement.lang = event.lang;
       },
     });
 

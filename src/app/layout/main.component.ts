@@ -1,4 +1,9 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  Inject,
+} from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ConfigService } from '@ngx-config/core';
 import { TranslateService } from '@ngx-translate/core';
@@ -8,6 +13,8 @@ import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { merge } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
+import { Location } from '@angular/common';
+import { WINDOW } from '../core/constants';
 
 @Component({
   selector: 'app-main',
@@ -24,7 +31,8 @@ export class MainComponent implements OnInit {
     private readonly route: ActivatedRoute,
     private readonly title: Title,
     private readonly meta: Meta,
-    private readonly wowService: NgwWowService
+    private readonly wowService: NgwWowService,
+    @Inject(WINDOW) private readonly window: Window
   ) {
     this.wowService.init();
   }
@@ -71,12 +79,12 @@ export class MainComponent implements OnInit {
     return this.config.getSettings('i18n.availableLanguages');
   }
 
-  toggleLanguage(language: Language): void {
-    this.translate.use(language.code).subscribe(() => {
-      this.meta.updateTag({
-        name: 'og:locale',
-        content: this.translate.instant(language.culture),
-      });
-    });
+  toggleLanguage(): void {
+    const currentLanguage = this.translate.currentLang;
+    if (currentLanguage === 'en') {
+      this.translate.use('ar');
+    } else {
+      this.translate.use('en');
+    }
   }
 }

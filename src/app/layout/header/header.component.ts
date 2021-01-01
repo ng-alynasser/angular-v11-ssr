@@ -16,7 +16,7 @@ import { Language } from 'src/app/core/models/language.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  @Output() readonly toggleLanguage: EventEmitter<Language>;
+  @Output() readonly toggleLanguage: EventEmitter<void>;
   @Input() availableLanguages: Language[] = [];
   @Input() currentLanguage = '';
   @ViewChild('navbarIcon') icon: ElementRef;
@@ -26,8 +26,8 @@ export class HeaderComponent {
     this.toggleLanguage = new EventEmitter();
   }
 
-  onToggleLanguage(language: Language): void {
-    this.toggleLanguage.emit(language);
+  onToggleLanguage(): void {
+    this.toggleLanguage.emit();
   }
 
   toggleIcon(): void {
