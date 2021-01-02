@@ -11,7 +11,51 @@
   },
   "HOME": {
     "PAGE_TITLE": "SAGEGO | Home",
-    "META_DESCRIPTION": "Homepage"
+    "META_DESCRIPTION": "Homepage",
+    "HOME_CAROUSEL": {
+      "SLIDE_1_TITLE": "Saudi German Development and Investment Company Limited (SAGECO)",
+      "SLIDE_1_PARAGRAPH": "is a consultancy, advisory and project development company which was established in 1981. Originally came into being as a joint venture between the Governments of the Kingdom of Saudi Arabia (Ministry of Finance) and the Federal Republic of Germany (DEG, Cologne).",
+      "SLIDE_2_FIRST_TITLE": "Our Mission",
+      "SLIDE_2_FIRST_PARAGRAPH": "To provide clients with 'one-stop-solution' for all their management consulting, business advisory, market research and studies and regulatory requirements.",
+      "SLIDE_2_SECOND_TITLE": "Our vision",
+      "SLIDE_2_SECOND_PARAGRAPH": "To be the most recognized multidisciplinary research and consulting firm and strategic partner to our most sought-after clients.",
+      "DISCOVER_MORE": "Discover more",
+      "NEXT": "Next",
+      "PREV": "Prev"
+    },
+    "EXP": {
+      "TITLE": "Experience and Know-How in Research & Consulting",
+      "PARAGRAPH": "Since its inception in 1981, SAGECO has carried out over 300 consultancy projects including Feasibility Studies, either independently or in partnership with renowned international consulting firms, whereby it has built up a substantial bank of expertise. These consultancy assignments have predominantly been rendered in the following sectors:",
+      "REAL_STATE": "Real State",
+      "INDUSTRIAL": "Industrial",
+      "PERTROCHEMICALS": "Petrochemicals",
+      "WATER": "Water Technologies",
+      "CONSTRUCTION": "Construction Products",
+      "AUTOMOBILE": "Automobile",
+      "ENGINEERING": "Engineering",
+      "PLASTICS": "Plastics",
+      "MEDICAL": "Medical",
+      "CONSUMER": "Consumer Products",
+      "ENERGY": "Energy",
+      "TELECOMMUNICATION": "Telecommunication",
+      "CHAIN": "Supply Chain Management",
+      "EDUCATION": "Education & IT",
+      "FOOD": "Food & Agriculture"
+    },
+    "SERVICES": {
+      "SMALL_HEADING": "What we do",
+      "BIG_HEADING": "Services we offer",
+      "EXPLORE": "Explore more",
+      "READ_MORE": "Read more",
+      "DILLIGENCE": "Financial Due Diligence",
+      "EVALUATION": "Financial Evaluation",
+      "INV_ADVISORY": "Investment Advisory",
+      "DEV_ADVISORY": "Development Advisory",
+      "INTERNAL": "Internal Audit",
+      "MODELING": "Financial Appraisals & Modeling",
+      "IFRS": "IFRS Implementation",
+      "VAR": "VAT Implementation"
+    }
   },
   "SERVICES": {
     "PAGE_TITLE": "SAGEO | Services",

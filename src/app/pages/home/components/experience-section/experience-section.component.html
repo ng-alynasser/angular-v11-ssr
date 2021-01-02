@@ -1,14 +1,10 @@
 <div class="experience">
   <div class="container">
     <h2 class="wow fadeInLeft" data-wow-delay="500ms">
-      Experience and Know-How in Research & Consulting
+      {{ "HOME.EXP.TITLE" | translate }}
     </h2>
     <p class="wow fadeInRight" data-wow-delay="500ms">
-      Since its inception in 1981, SAGECO has carried out over 300 consultancy
-      projects including Feasibility Studies, either independently or in
-      partnership with renowned international consulting firms, whereby it has
-      built up a substantial bank of expertise. These consultancy assignments
-      have predominantly been rendered in the following sectors:
+      {{ "HOME.EXP.PARAGRAPH" | translate }}
     </p>
 
     <div
@@ -29,7 +25,7 @@
           [attr.data-wow-delay]="(i + 1) * 100 + 'ms'"
         >
           <fa-icon [icon]="card.icon"></fa-icon>
-          <h3>{{ card?.title }}</h3>
+          <h3>{{ card?.title | translate }}</h3>
         </div>
       </ng-container>
     </div>

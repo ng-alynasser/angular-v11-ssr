@@ -1,8 +1,8 @@
 <section class="services">
   <div class="container">
     <div class="services__block-title wow fadeInDown" data-wow-delay="500ms">
-      <p>What we do</p>
-      <h3>Services we offer</h3>
+      <p>{{ "HOME.SERVICES.SMALL_HEADING" | translate }}</p>
+      <h3>{{ "HOME.SERVICES.BIG_HEADING" | translate }}</h3>
       <div class="leaf">
         <img src="assets/images/resources/leaf.png" alt="" />
       </div>
@@ -21,8 +21,10 @@
               <img [src]="service?.image" alt="" />
             </div>
             <div class="hover-box">
-              <h3>{{ service?.title }}</h3>
-              <button class="button" routerLink="/services">Read more</button>
+              <h3>{{ service?.title | translate }}</h3>
+              <button class="button" routerLink="/services">
+                {{ "HOME.SERVICES.READ_MORE" | translate }}
+              </button>
             </div>
           </div>
         </ng-template>
@@ -30,6 +32,6 @@
     </owl-carousel-o>
   </div>
   <button class="button button-explore" routerLink="/services">
-    explore more
+    {{ "HOME.SERVICES.EXPLORE" | translate }}
   </button>
 </section>

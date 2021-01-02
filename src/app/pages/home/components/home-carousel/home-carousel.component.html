@@ -14,17 +14,16 @@
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center space-between">
         <div
-          [fxFlexOrder]="
-            (translateService.onLangChange | async)?.lang === 'ar' ? 1 : 2
-          "
+          [fxFlexOrder]="isRtl ? 1 : 2"
           fxFlex="50"
           fxFlex.lt-sm="100"
           class="banner__content"
+          [dir]="isRtl ? 'rtl' : 'ltr'"
         >
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s"
           >
-            Saudi German Development and Investment Company Limited (SAGECO)
+            {{ "HOME.HOME_CAROUSEL.SLIDE_1_TITLE" | translate }}
           </div>
           <div
             class="banner__leafs animate__animated animate__fadeInUp animate__delay-1s animate__slow"
@@ -34,16 +33,14 @@
           <p
             class="banner__text animate__animated animate__fadeInUp animate__delay-2s"
           >
-            is a consultancy, advisory and project development company which
-            wasestablished in 1981. Originally came into being as a joint
-            venture between the Governments of the Kingdom of Saudi Arabia
-            (Ministry of Finance) and the Federal Republic of Germany (DEG ,
-            Cologne).
+            {{ "HOME.HOME_CAROUSEL.SLIDE_1_PARAGRAPH" | translate }}
           </p>
           <div
             class="banner__discover-btn animate__animated animate__fadeInUp animate__delay-2s aniamte__slow"
           >
-            <a routerLink="/services">Discover more</a>
+            <a routerLink="/services">{{
+              "HOME.HOME_CAROUSEL.DISCOVER_MORE" | translate
+            }}</a>
           </div>
         </div>
         <div
@@ -52,9 +49,7 @@
           fxLayoutAlign="center center"
           fxFlex="50"
           fxHide.lt-sm
-          [fxFlexOrder]="
-            (translateService.onLangChange | async)?.lang === 'ar' ? 2 : 1
-          "
+          [fxFlexOrder]="isRtl ? 2 : 1"
         >
           <img src="assets/images/home-slider/slide-1.jpg" />
         </div>
@@ -62,11 +57,17 @@
     </ng-template>
     <ng-template carouselSlide>
       <div fxLayout fxLayoutAlign="center stretch">
-        <div fxFlex="50" fxFlex.lt-sm="100" class="banner__content">
+        <div
+          fxFlex="50"
+          fxFlex.lt-sm="100"
+          class="banner__content"
+          [fxFlexOrder]="isRtl ? 1 : 2"
+          [dir]="isRtl ? 'rtl' : 'ltr'"
+        >
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s animate__slow"
           >
-            Our Mission
+            {{ "HOME.HOME_CAROUSEL.SLIDE_2_FIRST_TITLE" | translate }}
           </div>
           <div
             class="banner__leafs animate__animated animate__fadeInUp animate__delay-2s animate__slow"
@@ -76,15 +77,13 @@
           <p
             class="banner__text animate__animated animate__fadeInUp animate__delay-2s animate__slow"
           >
-            To provide clients with "one-stop-solution" for all their management
-            consulting, business advisory, market research and studies and
-            regulatory requirements.
+            {{ "HOME.HOME_CAROUSEL.SLIDE_2_FIRST_PARAGRAPH" | translate }}
           </p>
 
           <div
             class="banner__large-title animate__animated animate__fadeInUp animate__delay-1s animate__slow"
           >
-            Our vision
+            {{ "HOME.HOME_CAROUSEL.SLIDE_2_SECOND_TITLE" | translate }}
           </div>
           <div
             class="banner__leafs animate__animated animate__fadeInUp animate__delay-2s animate__slow"
@@ -94,14 +93,14 @@
           <p
             class="banner__text animate__animated animate__fadeInUp animate__delay-2s animate__slow"
           >
-            To be the most recognized multidisciplinary research and consulting
-            firm and strategic partner to our most sought-after clien ts.
+            {{ "HOME.HOME_CAROUSEL.SLIDE_2_SECOND_PARAGRAPH" | translate }}
           </p>
         </div>
         <div
           class="banner__bg animate__animated animate__fadeIn animate__slower"
           fxFlex="50"
           fxHide.lt-sm
+          [fxFlexOrder]="isRtl ? 2 : 1"
         >
           <img src="assets/images/home-slider/slide-2.jpg" />
         </div>
@@ -109,7 +108,11 @@
     </ng-template>
   </owl-carousel-o>
   <div class="banner__buttons">
-    <button class="btn-prev" (click)="owlCar.prev()">Prev</button>
-    <button class="btn-next" (click)="owlCar.next()">Next</button>
+    <button class="btn-prev" (click)="owlCar.prev()">
+      {{ "HOME.HOME_CAROUSEL.PREV" | translate }}
+    </button>
+    <button class="btn-next" (click)="owlCar.next()">
+      {{ "HOME.HOME_CAROUSEL.NEXT" | translate }}
+    </button>
   </div>
 </section>

@@ -1,0 +1,56 @@
+html[dir="rtl"] {
+  body {
+    direction: rtl;
+    text-align: right;
+
+    * > * {
+      font-family: var(--main-font) !important;
+      letter-spacing: initial !important;
+    }
+
+    .banner {
+      &__content {
+        padding-right: 40px !important;
+        text-align: center !important;
+      }
+
+      &__leafs {
+        margin: 20px auto;
+      }
+
+      &__large-title {
+        line-height: 1.4 !important;
+        font-size: 55px !important;
+      }
+    }
+
+    .experience {
+      &__card:last-child {
+        margin-right: 30px !important;
+      }
+    }
+
+    .services {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+        }
+
+        p {
+          font-size: 20px !important;
+          margin-bottom: 10px !important;
+        }
+      }
+
+      .carousel-item {
+        .hover-box {
+          padding: 20 10px !important;
+          h3 {
+            line-height: 1.4 !important;
+            font-size: 25px !important;
+          }
+        }
+      }
+    }
+  }
+}

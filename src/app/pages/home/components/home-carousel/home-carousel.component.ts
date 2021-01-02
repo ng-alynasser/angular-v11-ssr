@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -8,6 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home-carousel.component.scss'],
 })
 export class HomeCarouselComponent {
+  isRtl: boolean;
   customOptions: OwlOptions = {
     loop: true,
     dots: false,
@@ -30,5 +31,20 @@ export class HomeCarouselComponent {
     },
   };
 
-  constructor(public readonly translateService: TranslateService) {}
+  constructor(public readonly translateService: TranslateService) {
+    this.translateService.onLangChange.subscribe((event) => {
+      event.lang === 'ar' ? (this.isRtl = true) : (this.isRtl = false);
+      // if (event.lang === 'ar') {
+      //   this.customOptions = Object.assign(
+      //     {},
+      //     { ...this.customOptions, rtl: true }
+      //   );
+      // } else {
+      //   this.customOptions = Object.assign(
+      //     {},
+      //     { ...this.customOptions, rtl: false }
+      //   );
+      // }
+    });
+  }
 }

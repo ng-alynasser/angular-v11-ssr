@@ -10,105 +10,105 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 export class ExperienceSectionComponent implements OnInit {
   cards: { title: string; icon: IconProp }[] = [
     {
-      title: 'Water Technologies',
+      title: 'HOME.EXP.WATER',
       icon: {
         iconName: 'hand-holding-water',
         prefix: 'fas',
       },
     },
     {
-      title: 'Petrochemicals',
+      title: 'HOME.EXP.PERTROCHEMICALS',
       icon: {
         iconName: 'gas-pump',
         prefix: 'fas',
       },
     },
     {
-      title: 'Industrial',
+      title: 'HOME.EXP.INDUSTRIAL',
       icon: {
         iconName: 'industry',
         prefix: 'fas',
       },
     },
     {
-      title: 'Real Estate',
+      title: 'HOME.EXP.REAL_STATE',
       icon: {
         iconName: 'place-of-worship',
         prefix: 'fas',
       },
     },
     {
-      title: 'Plastics',
+      title: 'HOME.EXP.PLASTICS',
       icon: {
         iconName: 'prescription-bottle',
         prefix: 'fas',
       },
     },
     {
-      title: 'Engineering',
+      title: 'HOME.EXP.ENGINEERING',
       icon: {
         iconName: 'hard-hat',
         prefix: 'fas',
       },
     },
     {
-      title: 'Automobile',
+      title: 'HOME.EXP.AUTOMOBILE',
       icon: {
         iconName: 'bus-alt',
         prefix: 'fas',
       },
     },
     {
-      title: 'Construction products',
+      title: 'HOME.EXP.CONSTRUCTION',
       icon: {
         iconName: 'tools',
         prefix: 'fas',
       },
     },
     {
-      title: 'Telecommunication',
+      title: 'HOME.EXP.TELECOMMUNICATION',
       icon: {
         iconName: 'satellite-dish',
         prefix: 'fas',
       },
     },
     {
-      title: 'Energy',
+      title: 'HOME.EXP.ENERGY',
       icon: {
         iconName: 'plug',
         prefix: 'fas',
       },
     },
     {
-      title: 'Consumer Products',
+      title: 'HOME.EXP.CONSUMER',
       icon: {
         iconName: 'hands',
         prefix: 'fas',
       },
     },
     {
-      title: 'Medical',
+      title: 'HOME.EXP.MEDICAL',
       icon: {
         iconName: 'hand-holding-medical',
         prefix: 'fas',
       },
     },
     {
-      title: 'Food and Agriculture',
+      title: 'HOME.EXP.FOOD',
       icon: {
         iconName: 'seedling',
         prefix: 'fas',
       },
     },
     {
-      title: 'Education and IT',
+      title: 'HOME.EXP.EDUCATION',
       icon: {
         iconName: 'chalkboard-teacher',
         prefix: 'fas',
       },
     },
     {
-      title: 'Supply Chain Management',
+      title: 'HOME.EXP.CHAIN',
       icon: {
         iconName: 'network-wired',
         prefix: 'fas',
