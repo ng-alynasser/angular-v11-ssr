@@ -27,75 +27,75 @@ export class GalleryComponent implements OnInit {
   masonryItems = [
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434094/sageco-gallery/1_qdfq07.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434094/sageco-gallery/1_qdfq07.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434146/sageco-gallery/3_e09sjx.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434146/sageco-gallery/3_e09sjx.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434198/sageco-gallery/4_eh7nyc.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434198/sageco-gallery/4_eh7nyc.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434116/sageco-gallery/2_asnuj3.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434116/sageco-gallery/2_asnuj3.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434157/sageco-gallery/5_qn9vzt.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434157/sageco-gallery/5_qn9vzt.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434234/sageco-gallery/6_ic2mxe.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434234/sageco-gallery/6_ic2mxe.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434201/sageco-gallery/7_drkocn.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434201/sageco-gallery/7_drkocn.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434226/sageco-gallery/8_bdo6tm.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434226/sageco-gallery/8_bdo6tm.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434199/sageco-gallery/9_uydfux.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434199/sageco-gallery/9_uydfux.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434428/sageco-gallery/10_gm5utj.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434428/sageco-gallery/10_gm5utj.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434527/sageco-gallery/11_jzkd6k.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434527/sageco-gallery/11_jzkd6k.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434247/sageco-gallery/12_wuu1zn.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434247/sageco-gallery/12_wuu1zn.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434024/sageco-gallery/13_irssc3.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434024/sageco-gallery/13_irssc3.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609433988/sageco-gallery/14_yaekzr.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609433988/sageco-gallery/14_yaekzr.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434011/sageco-gallery/15_jdtct8.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434011/sageco-gallery/15_jdtct8.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434056/sageco-gallery/16_itc68u.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434056/sageco-gallery/16_itc68u.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434011/sageco-gallery/17_t4k3oj.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434011/sageco-gallery/17_t4k3oj.jpg',
     },
     {
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1609434399/sageco-gallery/19_shxxgy.jpg',
+        'http://res.cloudinary.com/alynasser/image/upload/v1609434399/sageco-gallery/19_shxxgy.jpg',
     },
   ];
 
