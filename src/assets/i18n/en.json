@@ -129,6 +129,16 @@
   },
   "CONTACT": {
     "PAGE_TITLE": "SAGECO | Contact",
-    "META_DESCRIPTION": "About us page"
+    "META_DESCRIPTION": "Contact us page",
+    "GET_IN_TOUCH": "GET IN TOUCH",
+    "CONTACT_US": "Contact with us",
+    "WRITE_MESSAGE": "Write us a message",
+    "SEND": "send",
+    "HAVE_QUESTION": "Have a question? don't hesitate to send us a message.",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "NUMBER": "Phone number",
+    "SUBJECT": "Subject",
+    "MESSAGE": "Message"
   }
 }

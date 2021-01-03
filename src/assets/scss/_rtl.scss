@@ -223,5 +223,48 @@ html[dir="rtl"] {
         }
       }
     }
+
+    .contact {
+      .contact-form-wrap {
+        margin-right: 0 !important;
+        &::before {
+          right: -10000px !important;
+          left: 0 !important;
+        }
+      }
+
+      &__block-title {
+        p {
+          font-size: 20px !important;
+          line-height: 1.4 !important;
+        }
+
+        h3 {
+          line-height: 1.4 !important;
+        }
+      }
+
+      .contact-form-inputs {
+        margin-right: 0 !important;
+      }
+
+      .input-group
+        input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]),
+      .input-group textarea {
+        padding-right: 30px;
+
+        @media screen and (max-width: 600px) {
+          padding-right: 15px;
+        }
+      }
+
+      .contact-questions {
+        .questions-title {
+          h3 {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
   }
 }
