@@ -1,29 +1,29 @@
-<section class="services">
+<section class="services-section-three">
   <div class="container">
-    <div class="services__block-title">
-      <p>There's even more</p>
-      <h3>management consultancy</h3>
+    <div class="services-section-three__block-title">
+      <p>{{ "SERVICES.EVEN_MORE" | translate }}</p>
+      <h3>{{ "SERVICES.MANAGEMENT_CONSULTANCY" | translate }}</h3>
       <div class="leaf">
         <img src="assets/images/resources/leaf.png" alt="" />
       </div>
     </div>
 
     <div
-      class="services__cards"
+      class="services-section-three__cards"
       fxLayout="row wrap"
       fxLayoutAlign="space-evenly start"
     >
       <ng-container *ngFor="let service of services">
         <div
-          class="services__card wow fadeInRight"
+          class="services-section-three__card wow fadeInRight"
           data-wow-delay="500ms"
           fxFlex="35"
           fxFlex.lt-sm="100"
           fxLayout="column"
         >
-          <h3>{{ service?.title }}</h3>
+          <h3>{{ service?.title | translate }}</h3>
           <div
-            class="services__card-image"
+            class="services-section-three__card-image"
             fxLayout
             fxLayoutAlign="center center"
           >

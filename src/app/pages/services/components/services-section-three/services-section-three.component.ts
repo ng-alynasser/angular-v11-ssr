@@ -9,27 +9,27 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 export class ServicesSectionThreeComponent implements OnInit {
   services = [
     {
-      title: 'Fiscal Adjustment Program',
+      title: 'SERVICES.FISCAL',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436335/sageco-services/fiscal-balance_blrodo.png',
     },
     {
-      title: 'Project Administration',
+      title: 'SERVICES.PROJECT_ADMINSTRATION',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436340/sageco-services/planning_sgn51v.jpg',
     },
     {
-      title: 'Post-Merger Integration',
+      title: 'SERVICES.POST_MERGER',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436338/sageco-services/post-merger_wxdphs.jpg',
     },
     {
-      title: 'Supply Chain Management',
+      title: 'SERVICES.SUPPLY_CHAIN',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436332/sageco-services/supply-chain_jeuqnb.jpg',
     },
     {
-      title: 'Inventory Management and Registry',
+      title: 'SERVICES.INVENTORY_MANAGEMENT',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436335/sageco-services/DataManagement_fq1tpb.jpg',
     },

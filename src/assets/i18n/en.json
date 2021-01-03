@@ -9,6 +9,16 @@
     "ABOUT": "About",
     "CONTACT": "Contact"
   },
+  "FOOTER": {
+    "EXPLORE": "Explore",
+    "NEWS": "News",
+    "NEWS_TITLE_1": "Learn 10 Best Tips for Investment in 2021",
+    "NEWS_TITLE_2": "Learn 10 Best Tips for Investment in 2021",
+    "DATE": "2 Jan, 2021",
+    "ADDRESS": "Riyadh, Saudi Arabia",
+    "EMAIL_ADDRESS": "Email Address",
+    "COPY_RIGHTS": "All copyrights"
+  },
   "HOME": {
     "PAGE_TITLE": "SAGEGO | Home",
     "META_DESCRIPTION": "Homepage",
@@ -54,12 +64,54 @@
       "INTERNAL": "Internal Audit",
       "MODELING": "Financial Appraisals & Modeling",
       "IFRS": "IFRS Implementation",
-      "VAR": "VAT Implementation"
+      "VAT": "VAT Implementation"
+    },
+    "TRUST": {
+      "HEADING": "SAGECO trusted by more than",
+      "CLIENTS_NUMBER": "255",
+      "CLIENTS": "clients",
+      "PROJECTS": "projects",
+      "PROJECTS_NUMBER": "870",
+      "PRODUCTS": "products",
+      "PRODUCTS_NUMBER": "1750"
+    },
+    "CLIENTS": {
+      "SMALL_HEADING": "who shares our success",
+      "BIG_HEADING": "meet the clients"
+    },
+    "PARTNERS": {
+      "SMALL_HEADING": "who believes in us",
+      "BIG_HEADING": "meet the partners"
+    },
+    "QUALITY": {
+      "HEADING": "we guarantee to provide you the highest quality products that meet your expectations.",
+      "CONTACT_US": "contact us"
     }
   },
   "SERVICES": {
     "PAGE_TITLE": "SAGEO | Services",
-    "META_DESCRIPTION": "About us page"
+    "META_DESCRIPTION": "About us page",
+    "FINANCIAL_ADVISORY": "Financial Advisory",
+    "THERE_IS_MORE": "And there's more",
+    "OUTSOURCING": "Outsourcing And Other Specialized Business Services",
+    "RESTRUCTURING": "Economy Restructuring And Short/Long - Term Outsourcing of Experienced Professionals",
+    "EVEN_MORE": "There's even more",
+    "MANAGEMENT_CONSULTANCY": "Management Consultancy",
+    "FISCAL": "Fiscal Adjustment Program",
+    "PROJECT_ADMINSTRATION": "Project Administration",
+    "POST_MERGER": "Post-Merger Integration",
+    "SUPPLY_CHAIN": "Supply Chain Management",
+    "INVENTORY_MANAGEMENT": "Inventory Management and Registry",
+    "LAST_NOT_LEAST": "Last but not least",
+    "RESEARCH": "Research and studies",
+    "FEASIBILITY_STUDIES": "Feasibility Studies.",
+    "MARKET_STUDIES": "Market Opportunity Studies.",
+    "SECTOR_STUDIES": "Sector and Countrywide Studies.",
+    "ASSESSMENT_STUDIES": "Assessment Studies.",
+    "INDUSTRIAL_REPORTS": "Industrial License Application Reports.",
+    "FOOD_AGRI": "Food and Agriculture.",
+    "MARKET_RESEARCH": "Market Survey Research (Qualitative and Qunatitative).",
+    "EDUCATION_SERVICES": "Education and IT Services (Procurement Intelligence, Supply Chain Management)."
   },
   "GALLERY": {
     "PAGE_TITLE": "SAGEO | Gallery",

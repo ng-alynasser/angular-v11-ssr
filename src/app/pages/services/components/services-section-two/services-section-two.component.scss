@@ -1,6 +1,6 @@
 @import "src/styles";
 
-.services {
+.services-section-two {
   padding: 65px 0;
   background-color: #f5f0e9;
 
@@ -34,7 +34,7 @@
     }
   }
 
-  .single-service {
+  &__single-service {
     &__left {
       img {
         border-radius: 15px;
@@ -64,7 +64,6 @@
         letter-spacing: 1px;
         font-weight: 800;
         font-size: 38px;
-        font-family: var(--heading-font);
 
         @include media("<md") {
           font-size: 22px;
@@ -84,6 +83,7 @@
         border-radius: 6px;
         transition: all 0.5s ease;
         cursor: pointer;
+        text-transform: uppercase;
 
         @include media("<md") {
           font-size: 16px;

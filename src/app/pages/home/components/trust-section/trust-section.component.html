@@ -5,7 +5,9 @@
     fxLayoutAlign="space-between center"
   >
     <h2 class="trust__text" fxFlex="50" fxFlex.lt-sm="100">
-      SAGECO trusted by more than <span>9,8750</span> clients
+      {{ "HOME.TRUST.HEADING" | translate }}
+      <span>{{ "HOME.TRUST.CLIENTS_NUMBER" | translate }}</span>
+      {{ "HOME.TRUST.CLIENTS" | translate }}
     </h2>
     <ul
       class="trust__counter-box wow fadeInRight"
@@ -23,8 +25,8 @@
         >
           <fa-icon [icon]="['fas', 'seedling']"></fa-icon>
         </div>
-        <h3>5493</h3>
-        <p>projects</p>
+        <h3>{{ "HOME.TRUST.PROJECTS_NUMBER" | translate }}</h3>
+        <p>{{ "HOME.TRUST.PROJECTS" | translate }}</p>
       </li>
       <li>
         <div
@@ -34,8 +36,8 @@
         >
           <fa-icon [icon]="['fas', 'project-diagram']"></fa-icon>
         </div>
-        <h3>1750</h3>
-        <p>products</p>
+        <h3>{{ "HOME.TRUST.PRODUCTS_NUMBER" | translate }}</h3>
+        <p>{{ "HOME.TRUST.PRODUCTS" | translate }}</p>
       </li>
     </ul>
   </div>

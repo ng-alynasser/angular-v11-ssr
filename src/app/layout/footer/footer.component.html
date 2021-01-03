@@ -14,18 +14,10 @@
       fxFlex.lt-sm="100"
       data-wow-delay="100ms"
     >
-      <h3 class="footer__title">About</h3>
+      <h3 class="footer__title">{{ "HEADER.ABOUT" | translate }}</h3>
       <p class="footer__about-text">
-        Saudi German Development and Investment Company Limited (SAGECO) is a
-        consultancy, advisory and project development company which
-        wasestablished in 1981.
+        {{ "HOME.HOME_CAROUSEL.SLIDE_1_PARAGRAPH" | translate }}
       </p>
-      <div class="footer__input-box">
-        <input type="email" placeholder="Email address" />
-        <button type="submit" fxLayout fxLayoutAlign="center center">
-          <fa-icon icon="check"></fa-icon>
-        </button>
-      </div>
     </div>
 
     <div
@@ -34,13 +26,20 @@
       fxFlex.lt-sm="100"
       data-wow-delay="200ms"
     >
-      <h3 class="footer__title">Explore</h3>
+      <h3 class="footer__title">{{ "FOOTER.EXPLORE" | translate }}</h3>
       <ul>
-        <li><a routerLink="/about">About us</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/projects">Our project</a></li>
-        <li><a routerLink="/news">Lastest News</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li>
+          <a routerLink="/about">{{ "HEADER.ABOUT" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/services">{{ "HEADER.SERVICES" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/projects">{{ "HEADER.PROJECTS" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/contact">{{ "HEADER.CONTACT" | translate }}</a>
+        </li>
       </ul>
     </div>
 
@@ -50,15 +49,17 @@
       fxFlex="30"
       data-wow-delay="300ms"
     >
-      <h3 class="footer__title">News</h3>
+      <h3 class="footer__title">{{ "FOOTER.NEWS" | translate }}</h3>
       <ul>
         <li fxLayout fxLayoutAlign="space-between center">
           <div class="footer__news-image">
             <img src="assets/images/resources/footer-1-img-1.jpg" alt="" />
           </div>
           <div>
-            <p class="footer__news-text">Learn 10 Best Tips for New Formers</p>
-            <p class="footer__news-date">30 Oct, 2019</p>
+            <p class="footer__news-text">
+              {{ "FOOTER.NEWS_TITLE_1" | translate }}
+            </p>
+            <p class="footer__news-date">{{ "FOOTER.DATE" | translate }}</p>
           </div>
         </li>
         <li fxLayout fxLayoutAlign="space-between center">
@@ -66,8 +67,10 @@
             <img src="assets/images/resources/footer-1-img-2.jpg" alt="" />
           </div>
           <div>
-            <p class="footer__news-text">Learn 10 Best Tips for New Formers</p>
-            <p class="footer__news-date">30 Oct, 2019</p>
+            <p class="footer__news-text">
+              {{ "FOOTER.NEWS_TITLE_2" | translate }}
+            </p>
+            <p class="footer__news-date">{{ "FOOTER.DATE" | translate }}</p>
           </div>
         </li>
       </ul>
@@ -79,8 +82,8 @@
       fxFlex.lt-sm="100"
       data-wow-delay="400ms"
     >
-      <h3 class="footer__title">Contact</h3>
-      <p>66 Broklyn Street, New Town DC 5752, New Yrok</p>
+      <h3 class="footer__title">{{ "HEADER.CONTACT" | translate }}</h3>
+      <p>{{ "FOOTER.ADDRESS" | translate }}</p>
       <a href=""> needhelp@agrikol.com </a>
       <a href="">666 888 0000</a>
 
@@ -103,6 +106,6 @@
 </footer>
 <div class="footer__bottom">
   <p class="footer__bottom-copyright">
-    &copy; All copyright {{ currentYear }}, SAGECO CO.
+    {{ "FOOTER.COPY_RIGHTS" | translate }} &copy; SAGECO CO, {{ currentYear }}.
   </p>
 </div>

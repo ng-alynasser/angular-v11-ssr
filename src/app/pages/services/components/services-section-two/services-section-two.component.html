@@ -1,20 +1,20 @@
-<div class="services">
+<div class="services-section-two">
   <div class="container">
-    <div class="services__block-title">
-      <p>And there's more</p>
-      <h3>Outsourcing And Other Specialized Business Services</h3>
+    <div class="services-section-two__block-title">
+      <p>{{ "SERVICES.THERE_IS_MORE" | translate }}</p>
+      <h3>{{ "SERVICES.OUTSOURCING" | translate }}</h3>
       <div class="leaf">
         <img src="assets/images/resources/leaf.png" alt="" />
       </div>
     </div>
 
     <div
-      class="services__single-service"
+      class="services-section-two__single-service"
       fxLayout="row wrap"
       fxLayoutAlign="space-evenly center"
     >
       <div
-        class="single-service__left wow fadeInLeft"
+        class="services-section-two__single-service__left wow fadeInLeft"
         data-wow-delay="400ms"
         fxFlex.lt-sm="100"
         fxFlex="40"
@@ -25,7 +25,7 @@
         />
       </div>
       <div
-        class="single-service__right"
+        class="services-section-two__single-service__right"
         fxFlex="40"
         fxFlex.lt-sm="100"
         fxLayout="column"
@@ -42,10 +42,11 @@
           />
         </div>
         <h3>
-          Economy Restructuring And Short/Long - Term Outsourcing of Experienced
-          Professionals
+          {{ "SERVICES.RESTRUCTURING" | translate }}
         </h3>
-        <button fxFlexAlign="start">Learn more</button>
+        <button fxFlexAlign="start">
+          {{ "HOME.SERVICES.READ_MORE" | translate }}
+        </button>
       </div>
     </div>
   </div>

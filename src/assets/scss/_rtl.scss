@@ -52,5 +52,153 @@ html[dir="rtl"] {
         }
       }
     }
+
+    .trust {
+      &__text {
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
+
+    .clients {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+        }
+
+        p {
+          font-size: 20px !important;
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+
+    .vision {
+      h2 {
+        line-height: 1.4 !important;
+      }
+      p {
+        font-size: 20px !important;
+      }
+    }
+
+    .partners {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+        }
+
+        p {
+          font-size: 20px !important;
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+
+    .footer {
+      &__title {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+        &::before {
+          right: 0 !important;
+          left: none !important;
+        }
+      }
+
+      &__input-box {
+        button {
+          left: 0 !important;
+          right: none !important;
+        }
+      }
+
+      &__explore {
+        li {
+          a {
+            &:hover {
+              padding-left: 0 !important;
+              padding-right: 15px !important;
+            }
+
+            &::before {
+              left: none !important;
+              right: 0 !important;
+            }
+          }
+        }
+      }
+
+      &__news {
+        &-image {
+          margin-left: 15px !important;
+        }
+      }
+    }
+
+    .services-section-one {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+          line-height: 1.4 !important;
+        }
+
+        p {
+          font-size: 18px !important;
+        }
+      }
+
+      &__card {
+        h3 {
+          font-size: 25px !important;
+        }
+      }
+    }
+
+    .services-section-two {
+      &__block-title {
+        h3 {
+          font-size: 40px !important;
+          line-height: 1.4 !important;
+        }
+
+        p {
+          font-size: 18px !important;
+        }
+      }
+
+      &__single-service {
+        &__right {
+          h3 {
+            font-size: 25px !important;
+          }
+        }
+      }
+    }
+
+    .services-section-three {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+          line-height: 1.4 !important;
+        }
+
+        p {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    .services-section-four {
+      &__block-title {
+        h3 {
+          font-size: 55px !important;
+          line-height: 1.4 !important;
+        }
+
+        p {
+          font-size: 18px !important;
+        }
+      }
+    }
   }
 }

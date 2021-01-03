@@ -68,7 +68,7 @@ export class ServicesSectionComponent {
         'https://res.cloudinary.com/alynasser/image/upload/v1609436338/sageco-services/IFR_vgwewy.jpg',
     },
     {
-      title: 'HOME.SERVICES.VAR',
+      title: 'HOME.SERVICES.VAT',
       image:
         'https://res.cloudinary.com/alynasser/image/upload/v1609436332/sageco-services/VAT_tlkr69.jpg',
     },
