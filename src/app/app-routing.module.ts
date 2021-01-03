@@ -1,11 +1,5 @@
 import { NgModule } from '@angular/core';
-import {
-  Routes,
-  RouterModule,
-  PreloadAllModules,
-  PreloadingStrategy,
-} from '@angular/router';
-import { MetaGuard } from '@ngx-meta/core';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { MainComponent } from './layout/main.component';
 
 const routes: Routes = [
