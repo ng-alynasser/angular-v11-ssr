@@ -200,5 +200,28 @@ html[dir="rtl"] {
         }
       }
     }
+
+    .about {
+      &__block-title {
+        p {
+          font-size: 20px !important;
+        }
+
+        h3 {
+          font-size: 50px !important;
+          line-height: 1.4 !important;
+          text-align: center;
+        }
+      }
+
+      &__content {
+        p {
+          &::before {
+            right: -30px !important;
+            left: 0 !important;
+          }
+        }
+      }
+    }
   }
 }

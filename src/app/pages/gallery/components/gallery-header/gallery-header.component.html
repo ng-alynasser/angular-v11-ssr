@@ -1,9 +1,11 @@
 <section class="gallery-header">
   <div class="container">
-    <h2 class="animate__animated animate__zoomInLeft">Gallery</h2>
+    <h2 class="animate__animated animate__zoomInLeft">
+      {{ "HEADER.GALLERY" | translate }}
+    </h2>
     <ul fxLayout fxLayoutAlign="center center">
-      <li routerLink="/home">Home</li>
-      <li>Gallery</li>
+      <li routerLink="/home">{{ "HEADER.HOME" | translate }}</li>
+      <li>{{ "HEADER.GALLERY" | translate }}</li>
     </ul>
   </div>
 </section>

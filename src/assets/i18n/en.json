@@ -7,7 +7,8 @@
     "GALLERY": "Gallery",
     "CHOOSE_US": "Why choose us",
     "ABOUT": "About",
-    "CONTACT": "Contact"
+    "CONTACT": "Contact",
+    "WHO_ARE_WE": "Who are we"
   },
   "FOOTER": {
     "EXPLORE": "Explore",
@@ -119,7 +120,12 @@
   },
   "ABOUT": {
     "PAGE_TITLE": "SAGECO | About",
-    "META_DESCRIPTION": "About us page"
+    "META_DESCRIPTION": "About us page",
+    "ABOUT_SAGECO": "About SAGECO",
+    "BIG_HEADING": "WE’RE PROVIDING THE BEST consultancy, advisory and project development services.",
+    "SUB_HEADING_1": "Saudi German Development and Investment Company Limited (SAGECO) is a consultancy, advisory and project development company which wasestablished in 1981.",
+    "SUB_HEADING_2": "The Company originally came into being as a joint venture between the Governments of the Kingdom of Saudi Arabia (Ministry of Finance) and the Federal Republic of Germany (DEG , Cologne) to promote cooperation between the Saudi and German private sectors and provide the requisite consultancy services. After expiration of the 25-years' mandatory period of the Joint Venture, the company was privatized.",
+    "SUB_HEADING_3": "SAGECO's activities are governed by the Company's philosophy which is, to uphold the values of Integrity, Quality and Professionalism . Its services are carried out in a reliable, professional and cost-effective way."
   },
   "CONTACT": {
     "PAGE_TITLE": "SAGECO | Contact",
