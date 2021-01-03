@@ -1,5 +1,9 @@
 {
-  "name": "App",
+  "name": "SAGECO",
+  "short_name": "SAGECO",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
